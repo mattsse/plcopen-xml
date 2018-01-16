@@ -212,4 +212,15 @@ public class VarList extends VarListPlain {
 		this.nonpersistent = value;
 	}
 
+	@Override
+	public String toString() {
+		return "VarList{" +
+				"name='" + name + '\'' +
+				", constant=" + constant +
+				", retain=" + retain +
+				", nonretain=" + nonretain +
+				", persistent=" + persistent +
+				", nonpersistent=" + nonpersistent +
+				'}';
+	}
 }

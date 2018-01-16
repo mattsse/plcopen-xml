@@ -343,4 +343,12 @@ public class VarListPlain implements AddDataable {
 
 	}
 
+	@Override
+	public String toString() {
+		return "VarListPlain{" +
+				"variable=" + variable +
+				", addData=" + addData +
+				", documentation=" + documentation +
+				'}';
+	}
 }

@@ -61,4 +61,15 @@ public class Method implements AddDataable {
 		}
 		return this.body;
 	}
+
+	@Override
+	public String toString() {
+		return "Method{" +
+				"_interface=" + _interface +
+				", body=" + body +
+				", addData=" + addData +
+				", name='" + name + '\'' +
+				", objectId='" + objectId + '\'' +
+				'}';
+	}
 }

@@ -62,6 +62,16 @@ public class ProjectStructure {
 			}
 			return this.Folder;
 		}
+
+		@Override
+		public String toString() {
+			return "StructureObject{" +
+					"name='" + name + '\'' +
+					", objectID='" + objectID + '\'' +
+					", Object=" + Object +
+					", Folder=" + Folder +
+					'}';
+		}
 	}
 
 	@XmlAccessorType(XmlAccessType.FIELD)
@@ -93,5 +103,21 @@ public class ProjectStructure {
 			}
 			return this.Folder;
 		}
+
+		@Override
+		public String toString() {
+			return "Folder{" +
+					"name='" + name + '\'' +
+					", Object=" + Object +
+					", Folder=" + Folder +
+					'}';
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "ProjectStructure{" +
+				"root=" + root +
+				'}';
 	}
 }

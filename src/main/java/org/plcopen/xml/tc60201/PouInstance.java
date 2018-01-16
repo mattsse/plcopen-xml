@@ -166,4 +166,14 @@ public class PouInstance implements AddDataable {
 		this.globalId = value;
 	}
 
+	@Override
+	public String toString() {
+		return "PouInstance{" +
+				"addData=" + addData +
+				", documentation=" + documentation +
+				", name='" + name + '\'' +
+				", typeName='" + typeName + '\'' +
+				", globalId='" + globalId + '\'' +
+				'}';
+	}
 }

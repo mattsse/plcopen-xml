@@ -224,6 +224,22 @@ public class AddData {
 			this.name = name;
 			this.handleUnknown = handleUnkown;
 		}
+
+		@Override
+		public String toString() {
+			return "Data{" +
+					"any=" + any +
+					", name='" + name + '\'' +
+					", handleUnknown='" + handleUnknown + '\'' +
+					", id='" + id + '\'' +
+					'}';
+		}
 	}
 
+	@Override
+	public String toString() {
+		return "AddData{" +
+				"data=" + data +
+				'}';
+	}
 }

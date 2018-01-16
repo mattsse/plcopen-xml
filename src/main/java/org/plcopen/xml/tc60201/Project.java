@@ -1444,6 +1444,21 @@ public class Project implements AddDataable {
 
 		}
 
+		@Override
+		public String toString() {
+			return "ContentHeader{" +
+					"comment='" + comment + '\'' +
+					", coordinateInfo=" + coordinateInfo +
+					", addDataInfo=" + addDataInfo +
+					", addData=" + addData +
+					", name='" + name + '\'' +
+					", version='" + version + '\'' +
+					", modificationDateTime=" + modificationDateTime +
+					", organization='" + organization + '\'' +
+					", author='" + author + '\'' +
+					", language='" + language + '\'' +
+					'}';
+		}
 	}
 
 	/**
@@ -1640,6 +1655,18 @@ public class Project implements AddDataable {
 			this.contentDescription = value;
 		}
 
+		@Override
+		public String toString() {
+			return "FileHeader{" +
+					"companyName='" + companyName + '\'' +
+					", companyURL='" + companyURL + '\'' +
+					", productName='" + productName + '\'' +
+					", productVersion='" + productVersion + '\'' +
+					", productRelease='" + productRelease + '\'' +
+					", creationDateTime=" + creationDateTime +
+					", contentDescription='" + contentDescription + '\'' +
+					'}';
+		}
 	}
 
 	/**
@@ -2639,8 +2666,20 @@ public class Project implements AddDataable {
 
 			}
 
+			@Override
+			public String toString() {
+				return "Configurations{" +
+						"configuration=" + configuration +
+						'}';
+			}
 		}
 
+		@Override
+		public String toString() {
+			return "Instances{" +
+					"configurations=" + configurations +
+					'}';
+		}
 	}
 
 	/**
@@ -4514,4 +4553,15 @@ public class Project implements AddDataable {
 
 	}
 
+	@Override
+	public String toString() {
+		return "Project{" +
+				"fileHeader=" + fileHeader +
+				", contentHeader=" + contentHeader +
+				", types=" + types +
+				", instances=" + instances +
+				", addData=" + addData +
+				", documentation=" + documentation +
+				'}';
+	}
 }

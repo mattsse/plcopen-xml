@@ -454,4 +454,12 @@ public class Value {
 
 	}
 
+	@Override
+	public String toString() {
+		return "Value{" +
+				"simpleValue=" + simpleValue +
+				", arrayValue=" + arrayValue +
+				", structValue=" + structValue +
+				'}';
+	}
 }

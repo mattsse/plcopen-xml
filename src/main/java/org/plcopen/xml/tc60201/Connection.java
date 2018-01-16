@@ -183,4 +183,14 @@ public class Connection implements AddDataable {
 		this.formalParameter = value;
 	}
 
+	@Override
+	public String toString() {
+		return "Connection{" +
+				"position=" + position +
+				", addData=" + addData +
+				", globalId='" + globalId + '\'' +
+				", refLocalId=" + refLocalId +
+				", formalParameter='" + formalParameter + '\'' +
+				'}';
+	}
 }

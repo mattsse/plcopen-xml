@@ -309,4 +309,12 @@ public class VarListConfig implements AddDataable {
 
 	}
 
+	@Override
+	public String toString() {
+		return "VarListConfig{" +
+				"configVariable=" + configVariable +
+				", addData=" + addData +
+				", documentation=" + documentation +
+				'}';
+	}
 }

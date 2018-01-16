@@ -129,6 +129,21 @@ public class Body implements AddDataable {
 		return il;
 	}
 
+	@Override
+	public String toString() {
+		return "Body{" +
+				"il=" + il +
+				", st=" + st +
+				", fbd=" + fbd +
+				", ld=" + ld +
+				", sfc=" + sfc +
+				", addData=" + addData +
+				", documentation=" + documentation +
+				", worksheetName='" + worksheetName + '\'' +
+				", globalId='" + globalId + '\'' +
+				'}';
+	}
+
 	/**
 	 * Legt den Wert der il-Eigenschaft fest.
 	 * 
@@ -386,6 +401,12 @@ public class Body implements AddDataable {
 			return this.commentOrErrorOrConnector;
 		}
 
+		@Override
+		public String toString() {
+			return "FBD{" +
+					"commentOrErrorOrConnector=" + commentOrErrorOrConnector +
+					'}';
+		}
 	}
 
 	/**
@@ -473,6 +494,12 @@ public class Body implements AddDataable {
 			return this.commentOrErrorOrConnector;
 		}
 
+		@Override
+		public String toString() {
+			return "LD{" +
+					"commentOrErrorOrConnector=" + commentOrErrorOrConnector +
+					'}';
+		}
 	}
 
 	/**
@@ -11124,6 +11151,12 @@ public class Body implements AddDataable {
 
 		}
 
+		@Override
+		public String toString() {
+			return "SFC{" +
+					"commentOrErrorOrConnector=" + commentOrErrorOrConnector +
+					'}';
+		}
 	}
 
 }

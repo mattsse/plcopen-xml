@@ -25,4 +25,10 @@ public class PlainText {
 		this.text = text;
 	}
 
+	@Override
+	public String toString() {
+		return "PlainText{" +
+				"text='" + text + '\'' +
+				'}';
+	}
 }
