@@ -9866,10 +9866,42 @@ public class Body implements AddDataable {
 						this.name = value;
 					}
 
+					@Override
+					public String toString() {
+						return "Reference{" +
+								"name='" + name + '\'' +
+								'}';
+					}
 				}
 
+				@Override
+				public String toString() {
+					return "Condition{" +
+							"reference=" + reference +
+							", connectionPointIn=" + connectionPointIn +
+							", inline=" + inline +
+							", negated=" + negated +
+							'}';
+				}
 			}
 
+			@Override
+			public String toString() {
+				return "Transition{" +
+						"position=" + position +
+						", connectionPointIn=" + connectionPointIn +
+						", connectionPointOut=" + connectionPointOut +
+						", condition=" + condition +
+						", addData=" + addData +
+						", documentation=" + documentation +
+						", localId=" + localId +
+						", height=" + height +
+						", width=" + width +
+						", priority=" + priority +
+						", executionOrderId=" + executionOrderId +
+						", globalId='" + globalId + '\'' +
+						'}';
+			}
 		}
 
 		/**
