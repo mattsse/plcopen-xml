@@ -24,3 +24,4 @@ target/
 .classpath
 .settings
 .idea/
+src/main/resources/Scenario_3.xml
