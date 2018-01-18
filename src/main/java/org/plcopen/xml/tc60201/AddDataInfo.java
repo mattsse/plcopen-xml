@@ -51,7 +51,7 @@ import java.util.List;
 @XmlType(name = "addDataInfo", propOrder = {
         "info"
 })
-public class AddDataInfo {
+public class AddDataInfo implements org.plcopen.xml.tc60201.PlcNode{
 
     protected List<AddDataInfo.Info> info;
 
@@ -107,7 +107,7 @@ public class AddDataInfo {
     @XmlType(name = "", propOrder = {
             "description"
     })
-    public static class Info {
+    public static class Info implements org.plcopen.xml.tc60201.PlcNode{
 
         protected FormattedText description;
         @XmlAttribute(name = "name", required = true)

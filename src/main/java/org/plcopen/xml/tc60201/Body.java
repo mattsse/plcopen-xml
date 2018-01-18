@@ -96,7 +96,7 @@ import java.util.List;
 @XmlSeeAlso({
         Body.SFC.Transition.Condition.Inline.class
 })
-public class Body implements AddDataContainer{
+public class Body implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
     @XmlElement(name = "IL")
     protected FormattedText il;
@@ -335,7 +335,7 @@ public class Body implements AddDataContainer{
     @XmlType(name = "", propOrder = {
             "commentOrErrorOrConnector"
     })
-    public static class FBD {
+    public static class FBD implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlElements({
                 @XmlElement(name = "comment", type = Body.SFC.Comment.class),
@@ -418,7 +418,7 @@ public class Body implements AddDataContainer{
     @XmlType(name = "", propOrder = {
             "commentOrErrorOrConnector"
     })
-    public static class LD {
+    public static class LD implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlElements({
                 @XmlElement(name = "comment", type = Body.SFC.Comment.class),
@@ -510,7 +510,7 @@ public class Body implements AddDataContainer{
     @XmlType(name = "", propOrder = {
             "commentOrErrorOrConnector"
     })
-    public static class SFC {
+    public static class SFC implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlElements({
                 @XmlElement(name = "comment", type = Body.SFC.Comment.class),
@@ -676,7 +676,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class ActionBlock implements AddDataContainer{
+        public static class ActionBlock implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -1001,7 +1001,7 @@ public class Body implements AddDataContainer{
                     "addData",
                     "documentation"
             })
-            public static class Action implements AddDataContainer{
+            public static class Action implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
                 @XmlElement(required = true)
                 protected Position relPosition;
@@ -1335,7 +1335,7 @@ public class Body implements AddDataContainer{
                  */
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "")
-                public static class Reference {
+                public static class Reference implements org.plcopen.xml.tc60201.PlcNode{
 
                     @XmlAttribute(name = "name", required = true)
                     protected String name;
@@ -1487,7 +1487,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Block implements AddDataContainer{
+        public static class Block implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -1818,7 +1818,7 @@ public class Body implements AddDataContainer{
             @XmlType(name = "", propOrder = {
                     "variable"
             })
-            public static class InOutVariables {
+            public static class InOutVariables implements org.plcopen.xml.tc60201.PlcNode{
 
                 protected List<Body.SFC.Block.InOutVariables.Variable> variable;
 
@@ -1883,7 +1883,7 @@ public class Body implements AddDataContainer{
                         "connectionPointOut",
                         "documentation"
                 })
-                public static class Variable {
+                public static class Variable implements org.plcopen.xml.tc60201.PlcNode{
 
                     protected org.plcopen.xml.tc60201.ConnectionPointIn connectionPointIn;
                     protected org.plcopen.xml.tc60201.ConnectionPointOut connectionPointOut;
@@ -2117,7 +2117,7 @@ public class Body implements AddDataContainer{
             @XmlType(name = "", propOrder = {
                     "variable"
             })
-            public static class InputVariables {
+            public static class InputVariables implements org.plcopen.xml.tc60201.PlcNode{
 
                 protected List<Body.SFC.Block.InputVariables.Variable> variable;
 
@@ -2180,7 +2180,7 @@ public class Body implements AddDataContainer{
                         "connectionPointIn",
                         "documentation"
                 })
-                public static class Variable {
+                public static class Variable implements org.plcopen.xml.tc60201.PlcNode{
 
                     @XmlElement(required = true)
                     protected org.plcopen.xml.tc60201.ConnectionPointIn connectionPointIn;
@@ -2394,7 +2394,7 @@ public class Body implements AddDataContainer{
             @XmlType(name = "", propOrder = {
                     "variable"
             })
-            public static class OutputVariables {
+            public static class OutputVariables implements org.plcopen.xml.tc60201.PlcNode{
 
                 protected List<Body.SFC.Block.OutputVariables.Variable> variable;
 
@@ -2457,7 +2457,7 @@ public class Body implements AddDataContainer{
                         "connectionPointOut",
                         "documentation"
                 })
-                public static class Variable {
+                public static class Variable implements org.plcopen.xml.tc60201.PlcNode{
 
                     protected org.plcopen.xml.tc60201.ConnectionPointOut connectionPointOut;
                     protected FormattedText documentation;
@@ -2678,7 +2678,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Coil implements AddDataContainer{
+        public static class Coil implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -3036,7 +3036,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Comment implements AddDataContainer{
+        public static class Comment implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -3256,7 +3256,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Connector implements AddDataContainer{
+        public static class Connector implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -3504,7 +3504,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Contact implements AddDataContainer{
+        public static class Contact implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -3867,7 +3867,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Continuation implements AddDataContainer{
+        public static class Continuation implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -4107,7 +4107,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Error implements AddDataContainer{
+        public static class Error implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -4337,7 +4337,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class InOutVariable implements AddDataContainer{
+        public static class InOutVariable implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -4783,7 +4783,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class InVariable implements AddDataContainer{
+        public static class InVariable implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -5125,7 +5125,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Jump implements AddDataContainer{
+        public static class Jump implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -5386,7 +5386,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class JumpStep implements AddDataContainer{
+        public static class JumpStep implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -5648,7 +5648,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Label implements AddDataContainer{
+        public static class Label implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -5898,7 +5898,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class LeftPowerRail implements AddDataContainer{
+        public static class LeftPowerRail implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -6194,7 +6194,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class MacroStep implements AddDataContainer{
+        public static class MacroStep implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -6504,7 +6504,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class OutVariable implements AddDataContainer{
+        public static class OutVariable implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -6845,7 +6845,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Return implements AddDataContainer{
+        public static class Return implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -7086,7 +7086,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class RightPowerRail implements AddDataContainer{
+        public static class RightPowerRail implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -7339,7 +7339,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class SelectionConvergence implements AddDataContainer{
+        public static class SelectionConvergence implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -7614,7 +7614,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class SelectionDivergence implements AddDataContainer{
+        public static class SelectionDivergence implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -7904,7 +7904,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class SimultaneousConvergence implements AddDataContainer{
+        public static class SimultaneousConvergence implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -8157,7 +8157,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class SimultaneousDivergence implements AddDataContainer{
+        public static class SimultaneousDivergence implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -8493,7 +8493,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Step implements AddDataContainer{
+        public static class Step implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -8973,7 +8973,7 @@ public class Body implements AddDataContainer{
                 "addData",
                 "documentation"
         })
-        public static class Transition implements AddDataContainer{
+        public static class Transition implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -9284,7 +9284,7 @@ public class Body implements AddDataContainer{
                     "connectionPointIn",
                     "inline"
             })
-            public static class Condition {
+            public static class Condition implements org.plcopen.xml.tc60201.PlcNode{
 
                 protected Body.SFC.Transition.Condition.Reference reference;
                 protected org.plcopen.xml.tc60201.ConnectionPointIn connectionPointIn;
@@ -9440,7 +9440,7 @@ public class Body implements AddDataContainer{
                  */
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "")
-                public static class Reference {
+                public static class Reference implements org.plcopen.xml.tc60201.PlcNode{
 
                     @XmlAttribute(name = "name", required = true)
                     protected String name;
@@ -9590,7 +9590,7 @@ public class Body implements AddDataContainer{
                 "outputVariables",
                 "addData"
         })
-        public static class VendorElement implements AddDataContainer{
+        public static class VendorElement implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected Position position;
@@ -9876,7 +9876,7 @@ public class Body implements AddDataContainer{
             @XmlType(name = "", propOrder = {
                     "variable"
             })
-            public static class InOutVariables {
+            public static class InOutVariables implements org.plcopen.xml.tc60201.PlcNode{
 
                 protected List<Body.SFC.VendorElement.InOutVariables.Variable> variable;
 
@@ -9941,7 +9941,7 @@ public class Body implements AddDataContainer{
                         "connectionPointOut",
                         "documentation"
                 })
-                public static class Variable {
+                public static class Variable implements org.plcopen.xml.tc60201.PlcNode{
 
                     protected org.plcopen.xml.tc60201.ConnectionPointIn connectionPointIn;
                     protected org.plcopen.xml.tc60201.ConnectionPointOut connectionPointOut;
@@ -10175,7 +10175,7 @@ public class Body implements AddDataContainer{
             @XmlType(name = "", propOrder = {
                     "variable"
             })
-            public static class InputVariables {
+            public static class InputVariables implements org.plcopen.xml.tc60201.PlcNode{
 
                 protected List<Body.SFC.VendorElement.InputVariables.Variable> variable;
 
@@ -10238,7 +10238,7 @@ public class Body implements AddDataContainer{
                         "connectionPointIn",
                         "documentation"
                 })
-                public static class Variable {
+                public static class Variable implements org.plcopen.xml.tc60201.PlcNode{
 
                     @XmlElement(required = true)
                     protected org.plcopen.xml.tc60201.ConnectionPointIn connectionPointIn;
@@ -10452,7 +10452,7 @@ public class Body implements AddDataContainer{
             @XmlType(name = "", propOrder = {
                     "variable"
             })
-            public static class OutputVariables {
+            public static class OutputVariables implements org.plcopen.xml.tc60201.PlcNode{
 
                 protected List<Body.SFC.VendorElement.OutputVariables.Variable> variable;
 
@@ -10515,7 +10515,7 @@ public class Body implements AddDataContainer{
                         "connectionPointOut",
                         "documentation"
                 })
-                public static class Variable {
+                public static class Variable implements org.plcopen.xml.tc60201.PlcNode{
 
                     protected org.plcopen.xml.tc60201.ConnectionPointOut connectionPointOut;
                     protected FormattedText documentation;

@@ -48,7 +48,7 @@ import java.util.List;
         "position",
         "addData"
 })
-public class Connection implements AddDataContainer{
+public class Connection implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
     protected List<Position> position;
     protected AddData addData;

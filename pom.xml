@@ -26,7 +26,12 @@
 			<artifactId>org.eclipse.persistence.moxy</artifactId>
             <version>${eclipselink.version}</version>
 		</dependency>
-		<dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.7</version>
+        </dependency>
+        <dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>

@@ -88,7 +88,7 @@ import java.util.List;
         RootValue.ArrayValue.Value.class,
         RootValue.StructValue.Value.class
 })
-public class RootValue {
+public class RootValue implements org.plcopen.xml.tc60201.PlcNode{
 
     protected RootValue.SimpleValue simpleValue;
     protected RootValue.ArrayValue arrayValue;
@@ -187,7 +187,7 @@ public class RootValue {
     @XmlType(name = "", propOrder = {
             "value"
     })
-    public static class ArrayValue {
+    public static class ArrayValue implements org.plcopen.xml.tc60201.PlcNode{
 
         protected List<RootValue.ArrayValue.Value> value;
 
@@ -291,7 +291,7 @@ public class RootValue {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "")
-    public static class SimpleValue {
+    public static class SimpleValue implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlAttribute(name = "value")
         protected String value;
@@ -351,7 +351,7 @@ public class RootValue {
     @XmlType(name = "", propOrder = {
             "value"
     })
-    public static class StructValue {
+    public static class StructValue implements org.plcopen.xml.tc60201.PlcNode{
 
         protected List<Value.StructValue.Value> value;
 

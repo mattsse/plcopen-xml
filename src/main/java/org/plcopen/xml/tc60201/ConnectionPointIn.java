@@ -51,7 +51,7 @@ import java.util.List;
 @XmlSeeAlso({
         org.plcopen.xml.tc60201.Body.SFC.SelectionConvergence.ConnectionPointIn.class
 })
-public class ConnectionPointIn implements AddDataContainer{
+public class ConnectionPointIn implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
     protected Position relPosition;
     protected List<Connection> connection;

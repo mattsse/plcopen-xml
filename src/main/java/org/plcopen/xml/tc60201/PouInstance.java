@@ -42,7 +42,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "addData",
         "documentation"
 })
-public class PouInstance implements AddDataContainer{
+public class PouInstance implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
     protected AddData addData;
     protected FormattedText documentation;

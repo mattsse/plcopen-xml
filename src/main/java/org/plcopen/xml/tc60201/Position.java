@@ -36,7 +36,7 @@ import java.math.BigDecimal;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "position")
-public class Position {
+public class Position implements org.plcopen.xml.tc60201.PlcNode{
 
     @XmlAttribute(name = "x", required = true)
     protected BigDecimal x;

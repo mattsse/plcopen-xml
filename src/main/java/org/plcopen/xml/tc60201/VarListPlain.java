@@ -62,7 +62,7 @@ import java.util.List;
 @XmlSeeAlso({
         VarList.class
 })
-public class VarListPlain implements AddDataContainer {
+public class VarListPlain implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
     protected List<VarListPlain.Variable> variable;
     protected AddData addData;
@@ -168,7 +168,7 @@ public class VarListPlain implements AddDataContainer {
             "addData",
             "documentation"
     })
-    public static class Variable implements AddDataContainer {
+    public static class Variable implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
         @XmlElement(required = true)
         protected DataType type;

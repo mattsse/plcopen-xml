@@ -40,7 +40,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "formattedText", propOrder = {
         "any"
 })
-public class FormattedText {
+public class FormattedText implements org.plcopen.xml.tc60201.PlcNode{
 
     @XmlAnyElement(lax = true)
     protected Object any;

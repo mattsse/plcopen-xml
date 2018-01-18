@@ -10,6 +10,7 @@ package org.plcopen.xml.tc60201;
 
 import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -75,7 +76,7 @@ import java.util.List;
         "subrangeUnsigned",
         "pointer"
 })
-public class DataType {
+public class DataType implements org.plcopen.xml.tc60201.PlcNode {
 
     @XmlElement(name = "BOOL")
     protected Object bool;
@@ -154,6 +155,12 @@ public class DataType {
      */
     public Object getBOOL() {
         return bool;
+    }
+
+
+    @Override
+    public <T> List<T> getChildNodes(Class<T> clazz) {
+        return Collections.emptyList();
     }
 
     /**
@@ -930,7 +937,7 @@ public class DataType {
             "dimension",
             "baseType"
     })
-    public static class Array {
+    public static class Array implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlElement(required = true)
         protected List<RangeSigned> dimension;
@@ -1011,7 +1018,7 @@ public class DataType {
     @XmlType(name = "", propOrder = {
             "addData"
     })
-    public static class Derived implements AddDataContainer {
+    public static class Derived implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
         protected AddData addData;
         @XmlAttribute(name = "name", required = true)
@@ -1102,7 +1109,7 @@ public class DataType {
             "values",
             "baseType"
     })
-    public static class Enum {
+    public static class Enum implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlElement(required = true)
         protected DataType.Enum.Values values;
@@ -1179,7 +1186,7 @@ public class DataType {
         @XmlType(name = "", propOrder = {
                 "value"
         })
-        public static class Values {
+        public static class Values implements org.plcopen.xml.tc60201.PlcNode{
 
             @XmlElement(required = true)
             protected List<DataType.Enum.Values.Value> value;
@@ -1233,7 +1240,7 @@ public class DataType {
              */
             @XmlAccessorType(XmlAccessType.FIELD)
             @XmlType(name = "")
-            public static class Value {
+            public static class Value implements org.plcopen.xml.tc60201.PlcNode{
 
                 @XmlAttribute(name = "name", required = true)
                 protected java.lang.String name;
@@ -1308,7 +1315,7 @@ public class DataType {
     @XmlType(name = "", propOrder = {
             "baseType"
     })
-    public static class Pointer {
+    public static class Pointer implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlElement(required = true)
         protected DataType baseType;
@@ -1356,7 +1363,7 @@ public class DataType {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "")
-    public static class String {
+    public static class String implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlAttribute(name = "length")
         protected java.lang.String length;
@@ -1407,7 +1414,7 @@ public class DataType {
             "range",
             "baseType"
     })
-    public static class SubrangeSigned {
+    public static class SubrangeSigned implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlElement(required = true)
         protected RangeSigned range;
@@ -1480,7 +1487,7 @@ public class DataType {
             "range",
             "baseType"
     })
-    public static class SubrangeUnsigned {
+    public static class SubrangeUnsigned implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlElement(required = true)
         protected RangeUnsigned range;
@@ -1550,7 +1557,7 @@ public class DataType {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "")
-    public static class Wstring {
+    public static class Wstring implements org.plcopen.xml.tc60201.PlcNode{
 
         @XmlAttribute(name = "length")
         protected java.lang.String length;

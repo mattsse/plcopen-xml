@@ -49,7 +49,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         org.plcopen.xml.tc60201.Body.SFC.SelectionDivergence.ConnectionPointOut.class,
         org.plcopen.xml.tc60201.Body.SFC.SimultaneousDivergence.ConnectionPointOut.class
 })
-public class ConnectionPointOut implements AddDataContainer{
+public class ConnectionPointOut implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
     protected Position relPosition;
     protected String expression;

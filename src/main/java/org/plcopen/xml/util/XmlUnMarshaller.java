@@ -25,7 +25,8 @@ public class XmlUnMarshaller {
                         Project.Instances.Configurations.Configuration.Resource.class,
                         ProjectStructure.class,
                         ProjectStructure.StructureObject.class,
-                        ProjectStructure.Folder.class}, properties);
+                        ProjectStructure.Folder.class,
+						Project.Types.Pous.Pou.class}, properties);
 
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 		Project project = (Project) jaxbUnmarshaller.unmarshal(xml);

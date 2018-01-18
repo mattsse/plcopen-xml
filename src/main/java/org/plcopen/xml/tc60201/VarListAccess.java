@@ -56,7 +56,7 @@ import java.util.List;
         "addData",
         "documentation"
 })
-public class VarListAccess implements AddDataContainer{
+public class VarListAccess implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
     protected List<VarListAccess.AccessVariable> accessVariable;
     protected AddData addData;
@@ -161,7 +161,7 @@ public class VarListAccess implements AddDataContainer{
             "addData",
             "documentation"
     })
-    public static class AccessVariable implements AddDataContainer{
+    public static class AccessVariable implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
         @XmlElement(required = true)
         protected DataType type;

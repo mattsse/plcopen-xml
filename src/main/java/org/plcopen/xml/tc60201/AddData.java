@@ -62,7 +62,7 @@ import java.util.stream.Collectors;
 @XmlType(name = "addData", propOrder = {
         "data"
 })
-public class AddData {
+public class AddData implements org.plcopen.xml.tc60201.PlcNode {
 
     protected List<AddData.Data> data;
 
@@ -168,7 +168,7 @@ public class AddData {
     @XmlType(name = "", propOrder = {
             "any"
     })
-    public static class Data {
+    public static class Data implements org.plcopen.xml.tc60201.PlcNode {
 
         @XmlAnyElement(lax = true)
         protected Object any;

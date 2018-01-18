@@ -420,7 +420,7 @@ import java.util.List;
         "documentation"
 })
 @XmlRootElement(name = "project")
-public class Project implements AddDataContainer {
+public class Project implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
     @XmlElement(required = true)
     protected Project.FileHeader fileHeader;
@@ -677,7 +677,7 @@ public class Project implements AddDataContainer {
             "addDataInfo",
             "addData"
     })
-    public static class ContentHeader implements AddDataContainer {
+    public static class ContentHeader implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
         @XmlElement(name = "Comment")
         protected String comment;
@@ -995,7 +995,7 @@ public class Project implements AddDataContainer {
                 "ld",
                 "sfc"
         })
-        public static class CoordinateInfo {
+        public static class CoordinateInfo implements org.plcopen.xml.tc60201.PlcNode {
 
             protected Project.ContentHeader.CoordinateInfo.PageSize pageSize;
             @XmlElement(required = true)
@@ -1116,7 +1116,7 @@ public class Project implements AddDataContainer {
             @XmlType(name = "", propOrder = {
                     "scaling"
             })
-            public static class Fbd {
+            public static class Fbd implements org.plcopen.xml.tc60201.PlcNode {
 
                 @XmlElement(required = true)
                 protected Project.ContentHeader.CoordinateInfo.Fbd.Scaling scaling;
@@ -1160,7 +1160,7 @@ public class Project implements AddDataContainer {
                  */
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "")
-                public static class Scaling {
+                public static class Scaling implements org.plcopen.xml.tc60201.PlcNode {
 
                     @XmlAttribute(name = "x", required = true)
                     protected BigDecimal x;
@@ -1242,7 +1242,7 @@ public class Project implements AddDataContainer {
             @XmlType(name = "", propOrder = {
                     "scaling"
             })
-            public static class Ld {
+            public static class Ld implements org.plcopen.xml.tc60201.PlcNode {
 
                 @XmlElement(required = true)
                 protected Project.ContentHeader.CoordinateInfo.Ld.Scaling scaling;
@@ -1286,7 +1286,7 @@ public class Project implements AddDataContainer {
                  */
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "")
-                public static class Scaling {
+                public static class Scaling implements org.plcopen.xml.tc60201.PlcNode {
 
                     @XmlAttribute(name = "x", required = true)
                     protected BigDecimal x;
@@ -1356,7 +1356,7 @@ public class Project implements AddDataContainer {
              */
             @XmlAccessorType(XmlAccessType.FIELD)
             @XmlType(name = "")
-            public static class PageSize {
+            public static class PageSize implements org.plcopen.xml.tc60201.PlcNode {
 
                 @XmlAttribute(name = "x", required = true)
                 protected BigDecimal x;
@@ -1436,7 +1436,7 @@ public class Project implements AddDataContainer {
             @XmlType(name = "", propOrder = {
                     "scaling"
             })
-            public static class Sfc {
+            public static class Sfc implements org.plcopen.xml.tc60201.PlcNode {
 
                 @XmlElement(required = true)
                 protected Project.ContentHeader.CoordinateInfo.Sfc.Scaling scaling;
@@ -1480,7 +1480,7 @@ public class Project implements AddDataContainer {
                  */
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "")
-                public static class Scaling {
+                public static class Scaling implements org.plcopen.xml.tc60201.PlcNode {
 
                     @XmlAttribute(name = "x", required = true)
                     protected BigDecimal x;
@@ -1558,7 +1558,7 @@ public class Project implements AddDataContainer {
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "")
-    public static class FileHeader {
+    public static class FileHeader implements org.plcopen.xml.tc60201.PlcNode {
 
         @XmlAttribute(name = "companyName", required = true)
         protected String companyName;
@@ -1807,7 +1807,7 @@ public class Project implements AddDataContainer {
     @XmlType(name = "", propOrder = {
             "configurations"
     })
-    public static class Instances {
+    public static class Instances implements org.plcopen.xml.tc60201.PlcNode {
 
         @XmlElement(required = true)
         protected Project.Instances.Configurations configurations;
@@ -1911,7 +1911,7 @@ public class Project implements AddDataContainer {
         @XmlType(name = "", propOrder = {
                 "configuration"
         })
-        public static class Configurations {
+        public static class Configurations implements org.plcopen.xml.tc60201.PlcNode {
 
             protected List<Project.Instances.Configurations.Configuration> configuration;
 
@@ -2019,7 +2019,7 @@ public class Project implements AddDataContainer {
                     "addData",
                     "documentation"
             })
-            public static class Configuration implements AddDataContainer {
+            public static class Configuration implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
                 protected List<Project.Instances.Configurations.Configuration.Resource> resource;
                 protected List<VarList> globalVars;
@@ -2269,7 +2269,7 @@ public class Project implements AddDataContainer {
                         "documentation"
                 })
                 @XmlRootElement(name = "resource")
-                public static class Resource implements AddDataContainer {
+                public static class Resource implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
                     protected List<Project.Instances.Configurations.Configuration.Resource.Task> task;
                     protected List<VarList> globalVars;
@@ -2372,6 +2372,7 @@ public class Project implements AddDataContainer {
                      * {@link AddData }
                      */
                     public AddData getAddData() {
+                        System.out.println("resource addata called");
                         return addData;
                     }
 
@@ -2486,7 +2487,7 @@ public class Project implements AddDataContainer {
                             "addData",
                             "documentation"
                     })
-                    public static class Task implements AddDataContainer {
+                    public static class Task implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
                         protected List<PouInstance> pouInstance;
                         protected AddData addData;
@@ -2877,7 +2878,7 @@ public class Project implements AddDataContainer {
             "dataTypes",
             "pous"
     })
-    public static class Types {
+    public static class Types implements org.plcopen.xml.tc60201.PlcNode {
 
         @XmlElement(required = true)
         protected Project.Types.DataTypes dataTypes;
@@ -2960,7 +2961,7 @@ public class Project implements AddDataContainer {
         @XmlType(name = "", propOrder = {
                 "dataType"
         })
-        public static class DataTypes {
+        public static class DataTypes implements org.plcopen.xml.tc60201.PlcNode {
 
             protected List<Project.Types.DataTypes.DataType> dataType;
 
@@ -3020,7 +3021,7 @@ public class Project implements AddDataContainer {
                     "addData",
                     "documentation"
             })
-            public static class DataType implements AddDataContainer{
+            public static class DataType implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
                 @XmlElement(required = true)
                 protected org.plcopen.xml.tc60201.DataType baseType;
@@ -3293,7 +3294,7 @@ public class Project implements AddDataContainer {
         @XmlType(name = "", propOrder = {
                 "pou"
         })
-        public static class Pous {
+        public static class Pous implements org.plcopen.xml.tc60201.PlcNode {
 
             protected List<Project.Types.Pous.Pou> pou;
 
@@ -3478,7 +3479,8 @@ public class Project implements AddDataContainer {
                     "addData",
                     "documentation"
             })
-            public static class Pou implements AddDataContainer {
+            @XmlRootElement(name = "pou")
+            public static class Pou implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
                 @XmlElement(name = "interface")
                 protected Project.Types.Pous.Pou.Interface _interface;
@@ -3720,7 +3722,7 @@ public class Project implements AddDataContainer {
                 @XmlType(name = "", propOrder = {
                         "action"
                 })
-                public static class Actions {
+                public static class Actions implements org.plcopen.xml.tc60201.PlcNode {
 
                     protected List<Project.Types.Pous.Pou.Actions.Action> action;
 
@@ -3779,7 +3781,7 @@ public class Project implements AddDataContainer {
                             "addData",
                             "documentation"
                     })
-                    public static class Action implements AddDataContainer{
+                    public static class Action implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
                         @XmlElement(required = true)
                         protected Body body;
@@ -3983,7 +3985,7 @@ public class Project implements AddDataContainer {
                         "addData",
                         "documentation"
                 })
-                public static class Interface implements AddDataContainer{
+                public static class Interface implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
                     protected org.plcopen.xml.tc60201.DataType returnType;
                     @XmlElements({
@@ -4293,7 +4295,7 @@ public class Project implements AddDataContainer {
                 @XmlType(name = "", propOrder = {
                         "transition"
                 })
-                public static class Transitions {
+                public static class Transitions implements org.plcopen.xml.tc60201.PlcNode {
 
                     protected List<Project.Types.Pous.Pou.Transitions.Transition> transition;
 
@@ -4352,7 +4354,7 @@ public class Project implements AddDataContainer {
                             "addData",
                             "documentation"
                     })
-                    public static class Transition implements AddDataContainer{
+                    public static class Transition implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
 
                         @XmlElement(required = true)
                         protected Body body;

@@ -6,7 +6,7 @@ import java.util.List;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "ProjectStructure")
-public class ProjectStructure {
+public class ProjectStructure implements org.plcopen.xml.tc60201.PlcNode{
 	@XmlAnyElement(lax = true)
 	protected StructureObject root;
 
@@ -20,13 +20,13 @@ public class ProjectStructure {
 
 	@XmlAccessorType(XmlAccessType.FIELD)
 	@XmlRootElement(name = "Object")
-	public static class StructureObject {
+	public static class StructureObject implements org.plcopen.xml.tc60201.PlcNode{
 		@XmlAttribute(name = "Name")
 		protected String name;
 		@XmlAttribute(name = "ObjectId")
 		protected String objectID;
-		protected List<StructureObject> Object;
-		protected List<Folder> Folder;
+		protected List<StructureObject> structureObjects;
+		protected List<Folder> folders;
 
 		public String getName() {
 			return name;
@@ -45,17 +45,17 @@ public class ProjectStructure {
 		}
 
 		public List<StructureObject> getStructureObjects() {
-			if (Object == null) {
-				Object = new ArrayList<StructureObject>();
+			if (structureObjects == null) {
+				structureObjects = new ArrayList<StructureObject>();
 			}
-			return this.Object;
+			return this.structureObjects;
 		}
 
 		public List<Folder> getFolders() {
-			if (Folder == null) {
-				Folder = new ArrayList<Folder>();
+			if (folders == null) {
+				folders = new ArrayList<Folder>();
 			}
-			return this.Folder;
+			return this.folders;
 		}
 
 		@Override
@@ -63,15 +63,15 @@ public class ProjectStructure {
 			return "StructureObject{" +
 					"name='" + name + '\'' +
 					", objectID='" + objectID + '\'' +
-					", Object=" + Object +
-					", Folder=" + Folder +
+					", Object=" + structureObjects +
+					", Folder=" + folders +
 					'}';
 		}
 	}
 
 	@XmlAccessorType(XmlAccessType.FIELD)
 	@XmlRootElement(name = "Folder")
-	public static class Folder {
+	public static class Folder implements org.plcopen.xml.tc60201.PlcNode{
 		@XmlAttribute(name = "Name")
 		protected String name;
 		protected List<StructureObject> Object;

@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlRegistry;
  * provided in this class.
  */
 @XmlRegistry
-public class ObjectFactory {
+public class ObjectFactory implements org.plcopen.xml.tc60201.PlcNode{
 
 
     /**

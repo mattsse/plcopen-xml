@@ -55,7 +55,7 @@ import java.util.List;
         "addData",
         "documentation"
 })
-public class VarListConfig implements AddDataContainer{
+public class VarListConfig implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
     protected List<VarListConfig.ConfigVariable> configVariable;
     protected AddData addData;
@@ -161,7 +161,7 @@ public class VarListConfig implements AddDataContainer{
             "addData",
             "documentation"
     })
-    public static class ConfigVariable implements AddDataContainer{
+    public static class ConfigVariable implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 
         @XmlElement(required = true)
         protected DataType type;

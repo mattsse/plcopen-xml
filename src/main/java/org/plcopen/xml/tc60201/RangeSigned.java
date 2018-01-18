@@ -35,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "rangeSigned")
-public class RangeSigned {
+public class RangeSigned implements org.plcopen.xml.tc60201.PlcNode{
 
     @XmlAttribute(name = "lower", required = true)
     protected String lower;
