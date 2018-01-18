@@ -1,6 +1,6 @@
 @XmlSchema(namespace = "http://www.plcopen.org/xml/tc6_0200", elementFormDefault = XmlNsForm.QUALIFIED)
 @XmlJavaTypeAdapters({
-		@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(value = MyStringAdapter.class, type = String.class) })
+		@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(value = StringAdapter.class, type = String.class) })
 
 package org.plcopen.xml.util;
 

@@ -1,6 +1,6 @@
 package org.plcopen.xml.util;
 
-public final class XMLLiterals {
+public final class XmlLiterals {
 
 	public final class PouTypes {
 		public final static String FUNCTIONBLOCK = "functionBlock";

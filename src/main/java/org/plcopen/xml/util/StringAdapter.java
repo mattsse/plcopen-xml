@@ -2,7 +2,7 @@ package org.plcopen.xml.util;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-public class MyStringAdapter extends XmlAdapter<String, String> {
+public class StringAdapter extends XmlAdapter<String, String> {
 
 	@Override
 	public String unmarshal(String v) throws Exception {
