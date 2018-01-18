@@ -9,7 +9,6 @@
 package org.plcopen.xml.tc60201;
 
 import javax.xml.bind.annotation.*;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -116,8 +115,8 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
     protected Object dt;
     @XmlElement(name = "TOD")
     protected Object tod;
-    protected DataType.String string;
-    protected DataType.Wstring wstring;
+    protected PlcString string;
+    protected Wstring wstring;
     @XmlElement(name = "ANY")
     protected Object any;
     @XmlElement(name = "ANY_DERIVED")
@@ -138,14 +137,14 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
     protected Object anystring;
     @XmlElement(name = "ANY_DATE")
     protected Object anydate;
-    protected DataType.Array array;
-    protected DataType.Derived derived;
+    protected PlcArray array;
+    protected Derived derived;
     @XmlElement(name = "enum")
-    protected DataType.Enum _enum;
+    protected PlcEnum _enum;
     protected VarListPlain struct;
-    protected DataType.SubrangeSigned subrangeSigned;
-    protected DataType.SubrangeUnsigned subrangeUnsigned;
-    protected DataType.Pointer pointer;
+    protected SubrangeSigned subrangeSigned;
+    protected SubrangeUnsigned subrangeUnsigned;
+    protected Pointer pointer;
 
     /**
      * Ruft den Wert der bool-Eigenschaft ab.
@@ -537,9 +536,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Ruft den Wert der string-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link DataType.String }
+     * {@link PlcString }
      */
-    public DataType.String getString() {
+    public PlcString getString() {
         return string;
     }
 
@@ -547,9 +546,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Legt den Wert der string-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link DataType.String }
+     *              {@link PlcString }
      */
-    public void setString(DataType.String value) {
+    public void setString(PlcString value) {
         this.string = value;
     }
 
@@ -557,9 +556,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Ruft den Wert der wstring-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link DataType.Wstring }
+     * {@link Wstring }
      */
-    public DataType.Wstring getWstring() {
+    public Wstring getWstring() {
         return wstring;
     }
 
@@ -567,9 +566,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Legt den Wert der wstring-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link DataType.Wstring }
+     *              {@link Wstring }
      */
-    public void setWstring(DataType.Wstring value) {
+    public void setWstring(Wstring value) {
         this.wstring = value;
     }
 
@@ -777,9 +776,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Ruft den Wert der array-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link DataType.Array }
+     * {@link PlcArray }
      */
-    public DataType.Array getArray() {
+    public PlcArray getArray() {
         return array;
     }
 
@@ -787,9 +786,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Legt den Wert der array-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link DataType.Array }
+     *              {@link PlcArray }
      */
-    public void setArray(DataType.Array value) {
+    public void setArray(PlcArray value) {
         this.array = value;
     }
 
@@ -797,9 +796,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Ruft den Wert der derived-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link DataType.Derived }
+     * {@link Derived }
      */
-    public DataType.Derived getDerived() {
+    public Derived getDerived() {
         return derived;
     }
 
@@ -807,9 +806,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Legt den Wert der derived-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link DataType.Derived }
+     *              {@link Derived }
      */
-    public void setDerived(DataType.Derived value) {
+    public void setDerived(Derived value) {
         this.derived = value;
     }
 
@@ -817,9 +816,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Ruft den Wert der enum-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link DataType.Enum }
+     * {@link PlcEnum }
      */
-    public DataType.Enum getEnum() {
+    public PlcEnum getEnum() {
         return _enum;
     }
 
@@ -827,9 +826,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Legt den Wert der enum-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link DataType.Enum }
+     *              {@link PlcEnum }
      */
-    public void setEnum(DataType.Enum value) {
+    public void setEnum(PlcEnum value) {
         this._enum = value;
     }
 
@@ -857,9 +856,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Ruft den Wert der subrangeSigned-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link DataType.SubrangeSigned }
+     * {@link SubrangeSigned }
      */
-    public DataType.SubrangeSigned getSubrangeSigned() {
+    public SubrangeSigned getSubrangeSigned() {
         return subrangeSigned;
     }
 
@@ -867,9 +866,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Legt den Wert der subrangeSigned-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link DataType.SubrangeSigned }
+     *              {@link SubrangeSigned }
      */
-    public void setSubrangeSigned(DataType.SubrangeSigned value) {
+    public void setSubrangeSigned(SubrangeSigned value) {
         this.subrangeSigned = value;
     }
 
@@ -877,9 +876,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Ruft den Wert der subrangeUnsigned-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link DataType.SubrangeUnsigned }
+     * {@link SubrangeUnsigned }
      */
-    public DataType.SubrangeUnsigned getSubrangeUnsigned() {
+    public SubrangeUnsigned getSubrangeUnsigned() {
         return subrangeUnsigned;
     }
 
@@ -887,9 +886,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Legt den Wert der subrangeUnsigned-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link DataType.SubrangeUnsigned }
+     *              {@link SubrangeUnsigned }
      */
-    public void setSubrangeUnsigned(DataType.SubrangeUnsigned value) {
+    public void setSubrangeUnsigned(SubrangeUnsigned value) {
         this.subrangeUnsigned = value;
     }
 
@@ -897,9 +896,9 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Ruft den Wert der pointer-Eigenschaft ab.
      *
      * @return possible object is
-     * {@link DataType.Pointer }
+     * {@link Pointer }
      */
-    public DataType.Pointer getPointer() {
+    public Pointer getPointer() {
         return pointer;
     }
 
@@ -907,681 +906,11 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
      * Legt den Wert der pointer-Eigenschaft fest.
      *
      * @param value allowed object is
-     *              {@link DataType.Pointer }
+     *              {@link Pointer }
      */
-    public void setPointer(DataType.Pointer value) {
+    public void setPointer(Pointer value) {
         this.pointer = value;
     }
 
-
-    /**
-     * <p>Java-Klasse für anonymous complex type.
-     * <p>
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
-     * <p>
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="dimension" type="{http://www.plcopen.org/xml/tc6_0201}rangeSigned" maxOccurs="unbounded"/>
-     *         &lt;element name="baseType" type="{http://www.plcopen.org/xml/tc6_0201}dataType"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-            "dimension",
-            "baseType"
-    })
-    public static class Array implements org.plcopen.xml.tc60201.PlcNode{
-
-        @XmlElement(required = true)
-        protected List<RangeSigned> dimension;
-        @XmlElement(required = true)
-        protected DataType baseType;
-
-        /**
-         * Gets the value of the dimension property.
-         * <p>
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the dimension property.
-         * <p>
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getDimension().add(newItem);
-         * </pre>
-         * <p>
-         * <p>
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link RangeSigned }
-         */
-        public List<RangeSigned> getDimension() {
-            if (dimension == null) {
-                dimension = new ArrayList<RangeSigned>();
-            }
-            return this.dimension;
-        }
-
-        /**
-         * Ruft den Wert der baseType-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link DataType }
-         */
-        public DataType getBaseType() {
-            return baseType;
-        }
-
-        /**
-         * Legt den Wert der baseType-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link DataType }
-         */
-        public void setBaseType(DataType value) {
-            this.baseType = value;
-        }
-
-    }
-
-
-    /**
-     * The user defined alias type
-     * <p>
-     * <p>Java-Klasse für anonymous complex type.
-     * <p>
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
-     * <p>
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="addData" type="{http://www.plcopen.org/xml/tc6_0201}addData" minOccurs="0"/>
-     *       &lt;/sequence>
-     *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-            "addData"
-    })
-    public static class Derived implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode {
-
-        protected AddData addData;
-        @XmlAttribute(name = "name", required = true)
-        protected java.lang.String name;
-
-        /**
-         * Ruft den Wert der addData-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link AddData }
-         */
-        public AddData getAddData() {
-            return addData;
-        }
-
-        /**
-         * Legt den Wert der addData-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link AddData }
-         */
-        public void setAddData(AddData value) {
-            this.addData = value;
-        }
-
-        /**
-         * Ruft den Wert der name-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link java.lang.String }
-         */
-        public java.lang.String getName() {
-            return name;
-        }
-
-        /**
-         * Legt den Wert der name-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link java.lang.String }
-         */
-        public void setName(java.lang.String value) {
-            this.name = value;
-        }
-
-    }
-
-
-    /**
-     * <p>Java-Klasse für anonymous complex type.
-     * <p>
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
-     * <p>
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="values">
-     *           &lt;complexType>
-     *             &lt;complexContent>
-     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                 &lt;sequence maxOccurs="unbounded">
-     *                   &lt;element name="value">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
-     *                           &lt;attribute name="value" type="{http://www.w3.org/2001/XMLSchema}string" />
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                 &lt;/sequence>
-     *               &lt;/restriction>
-     *             &lt;/complexContent>
-     *           &lt;/complexType>
-     *         &lt;/element>
-     *         &lt;element name="baseType" type="{http://www.plcopen.org/xml/tc6_0201}dataType" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-            "values",
-            "baseType"
-    })
-    public static class Enum implements org.plcopen.xml.tc60201.PlcNode{
-
-        @XmlElement(required = true)
-        protected DataType.Enum.Values values;
-        protected DataType baseType;
-
-        /**
-         * Ruft den Wert der values-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link DataType.Enum.Values }
-         */
-        public DataType.Enum.Values getValues() {
-            return values;
-        }
-
-        /**
-         * Legt den Wert der values-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link DataType.Enum.Values }
-         */
-        public void setValues(DataType.Enum.Values value) {
-            this.values = value;
-        }
-
-        /**
-         * Ruft den Wert der baseType-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link DataType }
-         */
-        public DataType getBaseType() {
-            return baseType;
-        }
-
-        /**
-         * Legt den Wert der baseType-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link DataType }
-         */
-        public void setBaseType(DataType value) {
-            this.baseType = value;
-        }
-
-
-        /**
-         * <p>Java-Klasse für anonymous complex type.
-         * <p>
-         * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
-         * <p>
-         * <pre>
-         * &lt;complexType>
-         *   &lt;complexContent>
-         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *       &lt;sequence maxOccurs="unbounded">
-         *         &lt;element name="value">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
-         *                 &lt;attribute name="value" type="{http://www.w3.org/2001/XMLSchema}string" />
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *       &lt;/sequence>
-         *     &lt;/restriction>
-         *   &lt;/complexContent>
-         * &lt;/complexType>
-         * </pre>
-         */
-        @XmlAccessorType(XmlAccessType.FIELD)
-        @XmlType(name = "", propOrder = {
-                "value"
-        })
-        public static class Values implements org.plcopen.xml.tc60201.PlcNode{
-
-            @XmlElement(required = true)
-            protected List<DataType.Enum.Values.Value> value;
-
-            /**
-             * Gets the value of the value property.
-             * <p>
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the value property.
-             * <p>
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getValue().add(newItem);
-             * </pre>
-             * <p>
-             * <p>
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link DataType.Enum.Values.Value }
-             */
-            public List<DataType.Enum.Values.Value> getValue() {
-                if (value == null) {
-                    value = new ArrayList<DataType.Enum.Values.Value>();
-                }
-                return this.value;
-            }
-
-
-            /**
-             * An enumeration value used to build up
-             * enumeration types
-             * <p>
-             * <p>Java-Klasse für anonymous complex type.
-             * <p>
-             * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
-             * <p>
-             * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
-             *       &lt;attribute name="value" type="{http://www.w3.org/2001/XMLSchema}string" />
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
-             * </pre>
-             */
-            @XmlAccessorType(XmlAccessType.FIELD)
-            @XmlType(name = "")
-            public static class Value implements org.plcopen.xml.tc60201.PlcNode{
-
-                @XmlAttribute(name = "name", required = true)
-                protected java.lang.String name;
-                @XmlAttribute(name = "value")
-                protected java.lang.String value;
-
-                /**
-                 * Ruft den Wert der name-Eigenschaft ab.
-                 *
-                 * @return possible object is
-                 * {@link java.lang.String }
-                 */
-                public java.lang.String getName() {
-                    return name;
-                }
-
-                /**
-                 * Legt den Wert der name-Eigenschaft fest.
-                 *
-                 * @param value allowed object is
-                 *              {@link java.lang.String }
-                 */
-                public void setName(java.lang.String value) {
-                    this.name = value;
-                }
-
-                /**
-                 * Ruft den Wert der value-Eigenschaft ab.
-                 *
-                 * @return possible object is
-                 * {@link java.lang.String }
-                 */
-                public java.lang.String getValue() {
-                    return value;
-                }
-
-                /**
-                 * Legt den Wert der value-Eigenschaft fest.
-                 *
-                 * @param value allowed object is
-                 *              {@link java.lang.String }
-                 */
-                public void setValue(java.lang.String value) {
-                    this.value = value;
-                }
-
-            }
-
-        }
-
-    }
-
-
-    /**
-     * <p>Java-Klasse für anonymous complex type.
-     * <p>
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
-     * <p>
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="baseType" type="{http://www.plcopen.org/xml/tc6_0201}dataType"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-            "baseType"
-    })
-    public static class Pointer implements org.plcopen.xml.tc60201.PlcNode{
-
-        @XmlElement(required = true)
-        protected DataType baseType;
-
-        /**
-         * Ruft den Wert der baseType-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link DataType }
-         */
-        public DataType getBaseType() {
-            return baseType;
-        }
-
-        /**
-         * Legt den Wert der baseType-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link DataType }
-         */
-        public void setBaseType(DataType value) {
-            this.baseType = value;
-        }
-
-    }
-
-
-    /**
-     * The single byte character string type
-     * <p>
-     * <p>
-     * <p>Java-Klasse für anonymous complex type.
-     * <p>
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
-     * <p>
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;attribute name="length" type="{http://www.w3.org/2001/XMLSchema}string" />
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "")
-    public static class String implements org.plcopen.xml.tc60201.PlcNode{
-
-        @XmlAttribute(name = "length")
-        protected java.lang.String length;
-
-        /**
-         * Ruft den Wert der length-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link java.lang.String }
-         */
-        public java.lang.String getLength() {
-            return length;
-        }
-
-        /**
-         * Legt den Wert der length-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link java.lang.String }
-         */
-        public void setLength(java.lang.String value) {
-            this.length = value;
-        }
-
-    }
-
-
-    /**
-     * <p>Java-Klasse für anonymous complex type.
-     * <p>
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
-     * <p>
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="range" type="{http://www.plcopen.org/xml/tc6_0201}rangeSigned"/>
-     *         &lt;element name="baseType" type="{http://www.plcopen.org/xml/tc6_0201}dataType"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-            "range",
-            "baseType"
-    })
-    public static class SubrangeSigned implements org.plcopen.xml.tc60201.PlcNode{
-
-        @XmlElement(required = true)
-        protected RangeSigned range;
-        @XmlElement(required = true)
-        protected DataType baseType;
-
-        /**
-         * Ruft den Wert der range-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link RangeSigned }
-         */
-        public RangeSigned getRange() {
-            return range;
-        }
-
-        /**
-         * Legt den Wert der range-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link RangeSigned }
-         */
-        public void setRange(RangeSigned value) {
-            this.range = value;
-        }
-
-        /**
-         * Ruft den Wert der baseType-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link DataType }
-         */
-        public DataType getBaseType() {
-            return baseType;
-        }
-
-        /**
-         * Legt den Wert der baseType-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link DataType }
-         */
-        public void setBaseType(DataType value) {
-            this.baseType = value;
-        }
-
-    }
-
-
-    /**
-     * <p>Java-Klasse für anonymous complex type.
-     * <p>
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
-     * <p>
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="range" type="{http://www.plcopen.org/xml/tc6_0201}rangeUnsigned"/>
-     *         &lt;element name="baseType" type="{http://www.plcopen.org/xml/tc6_0201}dataType"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-            "range",
-            "baseType"
-    })
-    public static class SubrangeUnsigned implements org.plcopen.xml.tc60201.PlcNode{
-
-        @XmlElement(required = true)
-        protected RangeUnsigned range;
-        @XmlElement(required = true)
-        protected DataType baseType;
-
-        /**
-         * Ruft den Wert der range-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link RangeUnsigned }
-         */
-        public RangeUnsigned getRange() {
-            return range;
-        }
-
-        /**
-         * Legt den Wert der range-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link RangeUnsigned }
-         */
-        public void setRange(RangeUnsigned value) {
-            this.range = value;
-        }
-
-        /**
-         * Ruft den Wert der baseType-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link DataType }
-         */
-        public DataType getBaseType() {
-            return baseType;
-        }
-
-        /**
-         * Legt den Wert der baseType-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link DataType }
-         */
-        public void setBaseType(DataType value) {
-            this.baseType = value;
-        }
-
-    }
-
-
-    /**
-     * The wide character (WORD) string type
-     * <p>
-     * <p>
-     * <p>Java-Klasse für anonymous complex type.
-     * <p>
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
-     * <p>
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;attribute name="length" type="{http://www.w3.org/2001/XMLSchema}string" />
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "")
-    public static class Wstring implements org.plcopen.xml.tc60201.PlcNode{
-
-        @XmlAttribute(name = "length")
-        protected java.lang.String length;
-
-        /**
-         * Ruft den Wert der length-Eigenschaft ab.
-         *
-         * @return possible object is
-         * {@link java.lang.String }
-         */
-        public java.lang.String getLength() {
-            return length;
-        }
-
-        /**
-         * Legt den Wert der length-Eigenschaft fest.
-         *
-         * @param value allowed object is
-         *              {@link java.lang.String }
-         */
-        public void setLength(java.lang.String value) {
-            this.length = value;
-        }
-
-    }
 
 }

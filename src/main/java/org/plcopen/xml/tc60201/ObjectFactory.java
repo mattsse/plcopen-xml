@@ -98,129 +98,129 @@ public class ObjectFactory implements org.plcopen.xml.tc60201.PlcNode{
     }
 
     /**
-     * Create an instance of {@link Body.SFC }
+     * Create an instance of {@link SFC }
      */
-    public Body.SFC createBodySFC() {
-        return new Body.SFC();
+    public SFC createBodySFC() {
+        return new SFC();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.SimultaneousDivergence }
+     * Create an instance of {@link SFC.SimultaneousDivergence }
      */
-    public Body.SFC.SimultaneousDivergence createBodySFCSimultaneousDivergence() {
-        return new Body.SFC.SimultaneousDivergence();
+    public SFC.SimultaneousDivergence createBodySFCSimultaneousDivergence() {
+        return new SFC.SimultaneousDivergence();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.SelectionConvergence }
+     * Create an instance of {@link SFC.SelectionConvergence }
      */
-    public Body.SFC.SelectionConvergence createBodySFCSelectionConvergence() {
-        return new Body.SFC.SelectionConvergence();
+    public SFC.SelectionConvergence createBodySFCSelectionConvergence() {
+        return new SFC.SelectionConvergence();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.SelectionDivergence }
+     * Create an instance of {@link SFC.SelectionDivergence }
      */
-    public Body.SFC.SelectionDivergence createBodySFCSelectionDivergence() {
-        return new Body.SFC.SelectionDivergence();
+    public SFC.SelectionDivergence createBodySFCSelectionDivergence() {
+        return new SFC.SelectionDivergence();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Transition }
+     * Create an instance of {@link SFC.Transition }
      */
-    public Body.SFC.Transition createBodySFCTransition() {
-        return new Body.SFC.Transition();
+    public SFC.Transition createBodySFCTransition() {
+        return new SFC.Transition();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Transition.Condition }
+     * Create an instance of {@link SFC.Transition.Condition }
      */
-    public Body.SFC.Transition.Condition createBodySFCTransitionCondition() {
-        return new Body.SFC.Transition.Condition();
+    public SFC.Transition.Condition createBodySFCTransitionCondition() {
+        return new SFC.Transition.Condition();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Step }
+     * Create an instance of {@link SFC.Step }
      */
-    public Body.SFC.Step createBodySFCStep() {
-        return new Body.SFC.Step();
+    public SFC.Step createBodySFCStep() {
+        return new SFC.Step();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.LeftPowerRail }
+     * Create an instance of {@link SFC.LeftPowerRail }
      */
-    public Body.SFC.LeftPowerRail createBodySFCLeftPowerRail() {
-        return new Body.SFC.LeftPowerRail();
+    public SFC.LeftPowerRail createBodySFCLeftPowerRail() {
+        return new SFC.LeftPowerRail();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Block }
+     * Create an instance of {@link SFC.Block }
      */
-    public Body.SFC.Block createBodySFCBlock() {
-        return new Body.SFC.Block();
+    public SFC.Block createBodySFCBlock() {
+        return new SFC.Block();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Block.OutputVariables }
+     * Create an instance of {@link SFC.Block.OutputVariables }
      */
-    public Body.SFC.Block.OutputVariables createBodySFCBlockOutputVariables() {
-        return new Body.SFC.Block.OutputVariables();
+    public SFC.Block.OutputVariables createBodySFCBlockOutputVariables() {
+        return new SFC.Block.OutputVariables();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Block.InOutVariables }
+     * Create an instance of {@link SFC.Block.InOutVariables }
      */
-    public Body.SFC.Block.InOutVariables createBodySFCBlockInOutVariables() {
-        return new Body.SFC.Block.InOutVariables();
+    public SFC.Block.InOutVariables createBodySFCBlockInOutVariables() {
+        return new SFC.Block.InOutVariables();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Block.InputVariables }
+     * Create an instance of {@link SFC.Block.InputVariables }
      */
-    public Body.SFC.Block.InputVariables createBodySFCBlockInputVariables() {
-        return new Body.SFC.Block.InputVariables();
+    public SFC.Block.InputVariables createBodySFCBlockInputVariables() {
+        return new SFC.Block.InputVariables();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.VendorElement }
+     * Create an instance of {@link SFC.VendorElement }
      */
-    public Body.SFC.VendorElement createBodySFCVendorElement() {
-        return new Body.SFC.VendorElement();
+    public SFC.VendorElement createBodySFCVendorElement() {
+        return new SFC.VendorElement();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.VendorElement.OutputVariables }
+     * Create an instance of {@link SFC.VendorElement.OutputVariables }
      */
-    public Body.SFC.VendorElement.OutputVariables createBodySFCVendorElementOutputVariables() {
-        return new Body.SFC.VendorElement.OutputVariables();
+    public SFC.VendorElement.OutputVariables createBodySFCVendorElementOutputVariables() {
+        return new SFC.VendorElement.OutputVariables();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.VendorElement.InOutVariables }
+     * Create an instance of {@link SFC.VendorElement.InOutVariables }
      */
-    public Body.SFC.VendorElement.InOutVariables createBodySFCVendorElementInOutVariables() {
-        return new Body.SFC.VendorElement.InOutVariables();
+    public SFC.VendorElement.InOutVariables createBodySFCVendorElementInOutVariables() {
+        return new SFC.VendorElement.InOutVariables();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.VendorElement.InputVariables }
+     * Create an instance of {@link SFC.VendorElement.InputVariables }
      */
-    public Body.SFC.VendorElement.InputVariables createBodySFCVendorElementInputVariables() {
-        return new Body.SFC.VendorElement.InputVariables();
+    public SFC.VendorElement.InputVariables createBodySFCVendorElementInputVariables() {
+        return new SFC.VendorElement.InputVariables();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.ActionBlock }
+     * Create an instance of {@link SFC.ActionBlock }
      */
-    public Body.SFC.ActionBlock createBodySFCActionBlock() {
-        return new Body.SFC.ActionBlock();
+    public SFC.ActionBlock createBodySFCActionBlock() {
+        return new SFC.ActionBlock();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.ActionBlock.Action }
+     * Create an instance of {@link SFC.ActionBlock.Action }
      */
-    public Body.SFC.ActionBlock.Action createBodySFCActionBlockAction() {
-        return new Body.SFC.ActionBlock.Action();
+    public SFC.ActionBlock.Action createBodySFCActionBlockAction() {
+        return new SFC.ActionBlock.Action();
     }
 
     /**
@@ -231,17 +231,17 @@ public class ObjectFactory implements org.plcopen.xml.tc60201.PlcNode{
     }
 
     /**
-     * Create an instance of {@link org.plcopen.xml.tc60201.DataType.Enum }
+     * Create an instance of {@link PlcEnum }
      */
-    public org.plcopen.xml.tc60201.DataType.Enum createDataTypeEnum() {
-        return new org.plcopen.xml.tc60201.DataType.Enum();
+    public PlcEnum createDataTypeEnum() {
+        return new PlcEnum();
     }
 
     /**
-     * Create an instance of {@link org.plcopen.xml.tc60201.DataType.Enum.Values }
+     * Create an instance of {@link Values }
      */
-    public org.plcopen.xml.tc60201.DataType.Enum.Values createDataTypeEnumValues() {
-        return new org.plcopen.xml.tc60201.DataType.Enum.Values();
+    public Values createDataTypeEnumValues() {
+        return new Values();
     }
 
     /**
@@ -252,122 +252,122 @@ public class ObjectFactory implements org.plcopen.xml.tc60201.PlcNode{
     }
 
     /**
-     * Create an instance of {@link Project.Instances }
+     * Create an instance of {@link Instances }
      */
-    public Project.Instances createProjectInstances() {
-        return new Project.Instances();
+    public Instances createProjectInstances() {
+        return new Instances();
     }
 
     /**
-     * Create an instance of {@link Project.Instances.Configurations }
+     * Create an instance of {@link Instances.Configurations }
      */
-    public Project.Instances.Configurations createProjectInstancesConfigurations() {
-        return new Project.Instances.Configurations();
+    public Instances.Configurations createProjectInstancesConfigurations() {
+        return new Instances.Configurations();
     }
 
     /**
-     * Create an instance of {@link Project.Instances.Configurations.Configuration }
+     * Create an instance of {@link Instances.Configurations.Configuration }
      */
-    public Project.Instances.Configurations.Configuration createProjectInstancesConfigurationsConfiguration() {
-        return new Project.Instances.Configurations.Configuration();
+    public Instances.Configurations.Configuration createProjectInstancesConfigurationsConfiguration() {
+        return new Instances.Configurations.Configuration();
     }
 
     /**
-     * Create an instance of {@link Project.Instances.Configurations.Configuration.Resource }
+     * Create an instance of {@link Instances.Configurations.Configuration.Resource }
      */
-    public Project.Instances.Configurations.Configuration.Resource createProjectInstancesConfigurationsConfigurationResource() {
-        return new Project.Instances.Configurations.Configuration.Resource();
+    public Instances.Configurations.Configuration.Resource createProjectInstancesConfigurationsConfigurationResource() {
+        return new Instances.Configurations.Configuration.Resource();
     }
 
     /**
-     * Create an instance of {@link Project.Types }
+     * Create an instance of {@link Types }
      */
-    public Project.Types createProjectTypes() {
-        return new Project.Types();
+    public Types createProjectTypes() {
+        return new Types();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous }
+     * Create an instance of {@link Pous }
      */
-    public Project.Types.Pous createProjectTypesPous() {
-        return new Project.Types.Pous();
+    public Pous createProjectTypesPous() {
+        return new Pous();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou }
+     * Create an instance of {@link Pou }
      */
-    public Project.Types.Pous.Pou createProjectTypesPousPou() {
-        return new Project.Types.Pous.Pou();
+    public Pou createProjectTypesPousPou() {
+        return new Pou();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Transitions }
+     * Create an instance of {@link Pou.Transitions }
      */
-    public Project.Types.Pous.Pou.Transitions createProjectTypesPousPouTransitions() {
-        return new Project.Types.Pous.Pou.Transitions();
+    public Pou.Transitions createProjectTypesPousPouTransitions() {
+        return new Pou.Transitions();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Actions }
+     * Create an instance of {@link Pou.Actions }
      */
-    public Project.Types.Pous.Pou.Actions createProjectTypesPousPouActions() {
-        return new Project.Types.Pous.Pou.Actions();
+    public Pou.Actions createProjectTypesPousPouActions() {
+        return new Pou.Actions();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Interface }
+     * Create an instance of {@link Pou.Interface }
      */
-    public Project.Types.Pous.Pou.Interface createProjectTypesPousPouInterface() {
-        return new Project.Types.Pous.Pou.Interface();
+    public Pou.Interface createProjectTypesPousPouInterface() {
+        return new Pou.Interface();
     }
 
     /**
-     * Create an instance of {@link Project.Types.DataTypes }
+     * Create an instance of {@link DataTypes }
      */
-    public Project.Types.DataTypes createProjectTypesDataTypes() {
-        return new Project.Types.DataTypes();
+    public DataTypes createProjectTypesDataTypes() {
+        return new DataTypes();
     }
 
     /**
-     * Create an instance of {@link Project.ContentHeader }
+     * Create an instance of {@link ContentHeader }
      */
-    public Project.ContentHeader createProjectContentHeader() {
-        return new Project.ContentHeader();
+    public ContentHeader createProjectContentHeader() {
+        return new ContentHeader();
     }
 
     /**
-     * Create an instance of {@link Project.ContentHeader.CoordinateInfo }
+     * Create an instance of {@link ContentHeader.CoordinateInfo }
      */
-    public Project.ContentHeader.CoordinateInfo createProjectContentHeaderCoordinateInfo() {
-        return new Project.ContentHeader.CoordinateInfo();
+    public ContentHeader.CoordinateInfo createProjectContentHeaderCoordinateInfo() {
+        return new ContentHeader.CoordinateInfo();
     }
 
     /**
-     * Create an instance of {@link Project.ContentHeader.CoordinateInfo.Sfc }
+     * Create an instance of {@link ContentHeader.CoordinateInfo.Sfc }
      */
-    public Project.ContentHeader.CoordinateInfo.Sfc createProjectContentHeaderCoordinateInfoSfc() {
-        return new Project.ContentHeader.CoordinateInfo.Sfc();
+    public ContentHeader.CoordinateInfo.Sfc createProjectContentHeaderCoordinateInfoSfc() {
+        return new ContentHeader.CoordinateInfo.Sfc();
     }
 
     /**
-     * Create an instance of {@link Project.ContentHeader.CoordinateInfo.Ld }
+     * Create an instance of {@link ContentHeader.CoordinateInfo.Ld }
      */
-    public Project.ContentHeader.CoordinateInfo.Ld createProjectContentHeaderCoordinateInfoLd() {
-        return new Project.ContentHeader.CoordinateInfo.Ld();
+    public ContentHeader.CoordinateInfo.Ld createProjectContentHeaderCoordinateInfoLd() {
+        return new ContentHeader.CoordinateInfo.Ld();
     }
 
     /**
-     * Create an instance of {@link Project.ContentHeader.CoordinateInfo.Fbd }
+     * Create an instance of {@link ContentHeader.CoordinateInfo.Fbd }
      */
-    public Project.ContentHeader.CoordinateInfo.Fbd createProjectContentHeaderCoordinateInfoFbd() {
-        return new Project.ContentHeader.CoordinateInfo.Fbd();
+    public ContentHeader.CoordinateInfo.Fbd createProjectContentHeaderCoordinateInfoFbd() {
+        return new ContentHeader.CoordinateInfo.Fbd();
     }
 
     /**
-     * Create an instance of {@link Project.FileHeader }
+     * Create an instance of {@link FileHeader }
      */
-    public Project.FileHeader createProjectFileHeader() {
-        return new Project.FileHeader();
+    public FileHeader createProjectFileHeader() {
+        return new FileHeader();
     }
 
     /**
@@ -469,10 +469,10 @@ public class ObjectFactory implements org.plcopen.xml.tc60201.PlcNode{
     }
 
     /**
-     * Create an instance of {@link AddDataInfo.Info }
+     * Create an instance of {@link Info }
      */
-    public AddDataInfo.Info createAddDataInfoInfo() {
-        return new AddDataInfo.Info();
+    public Info createAddDataInfoInfo() {
+        return new Info();
     }
 
     /**
@@ -483,402 +483,402 @@ public class ObjectFactory implements org.plcopen.xml.tc60201.PlcNode{
     }
 
     /**
-     * Create an instance of {@link Body.FBD }
+     * Create an instance of {@link FBD }
      */
-    public Body.FBD createBodyFBD() {
-        return new Body.FBD();
+    public FBD createBodyFBD() {
+        return new FBD();
     }
 
     /**
-     * Create an instance of {@link Body.LD }
+     * Create an instance of {@link LD }
      */
-    public Body.LD createBodyLD() {
-        return new Body.LD();
+    public LD createBodyLD() {
+        return new LD();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Comment }
+     * Create an instance of {@link SFC.Comment }
      */
-    public Body.SFC.Comment createBodySFCComment() {
-        return new Body.SFC.Comment();
+    public SFC.Comment createBodySFCComment() {
+        return new SFC.Comment();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Error }
+     * Create an instance of {@link SFC.Error }
      */
-    public Body.SFC.Error createBodySFCError() {
-        return new Body.SFC.Error();
+    public SFC.Error createBodySFCError() {
+        return new SFC.Error();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Connector }
+     * Create an instance of {@link SFC.Connector }
      */
-    public Body.SFC.Connector createBodySFCConnector() {
-        return new Body.SFC.Connector();
+    public SFC.Connector createBodySFCConnector() {
+        return new SFC.Connector();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Continuation }
+     * Create an instance of {@link SFC.Continuation }
      */
-    public Body.SFC.Continuation createBodySFCContinuation() {
-        return new Body.SFC.Continuation();
+    public SFC.Continuation createBodySFCContinuation() {
+        return new SFC.Continuation();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.InVariable }
+     * Create an instance of {@link SFC.InVariable }
      */
-    public Body.SFC.InVariable createBodySFCInVariable() {
-        return new Body.SFC.InVariable();
+    public SFC.InVariable createBodySFCInVariable() {
+        return new SFC.InVariable();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.OutVariable }
+     * Create an instance of {@link SFC.OutVariable }
      */
-    public Body.SFC.OutVariable createBodySFCOutVariable() {
-        return new Body.SFC.OutVariable();
+    public SFC.OutVariable createBodySFCOutVariable() {
+        return new SFC.OutVariable();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.InOutVariable }
+     * Create an instance of {@link SFC.InOutVariable }
      */
-    public Body.SFC.InOutVariable createBodySFCInOutVariable() {
-        return new Body.SFC.InOutVariable();
+    public SFC.InOutVariable createBodySFCInOutVariable() {
+        return new SFC.InOutVariable();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Label }
+     * Create an instance of {@link SFC.Label }
      */
-    public Body.SFC.Label createBodySFCLabel() {
-        return new Body.SFC.Label();
+    public SFC.Label createBodySFCLabel() {
+        return new SFC.Label();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Jump }
+     * Create an instance of {@link SFC.Jump }
      */
-    public Body.SFC.Jump createBodySFCJump() {
-        return new Body.SFC.Jump();
+    public SFC.Jump createBodySFCJump() {
+        return new SFC.Jump();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Return }
+     * Create an instance of {@link SFC.Return }
      */
-    public Body.SFC.Return createBodySFCReturn() {
-        return new Body.SFC.Return();
+    public SFC.Return createBodySFCReturn() {
+        return new SFC.Return();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.RightPowerRail }
+     * Create an instance of {@link SFC.RightPowerRail }
      */
-    public Body.SFC.RightPowerRail createBodySFCRightPowerRail() {
-        return new Body.SFC.RightPowerRail();
+    public SFC.RightPowerRail createBodySFCRightPowerRail() {
+        return new SFC.RightPowerRail();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Coil }
+     * Create an instance of {@link SFC.Coil }
      */
-    public Body.SFC.Coil createBodySFCCoil() {
-        return new Body.SFC.Coil();
+    public SFC.Coil createBodySFCCoil() {
+        return new SFC.Coil();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Contact }
+     * Create an instance of {@link SFC.Contact }
      */
-    public Body.SFC.Contact createBodySFCContact() {
-        return new Body.SFC.Contact();
+    public SFC.Contact createBodySFCContact() {
+        return new SFC.Contact();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.MacroStep }
+     * Create an instance of {@link SFC.MacroStep }
      */
-    public Body.SFC.MacroStep createBodySFCMacroStep() {
-        return new Body.SFC.MacroStep();
+    public SFC.MacroStep createBodySFCMacroStep() {
+        return new SFC.MacroStep();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.JumpStep }
+     * Create an instance of {@link SFC.JumpStep }
      */
-    public Body.SFC.JumpStep createBodySFCJumpStep() {
-        return new Body.SFC.JumpStep();
+    public SFC.JumpStep createBodySFCJumpStep() {
+        return new SFC.JumpStep();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.SimultaneousConvergence }
+     * Create an instance of {@link SFC.SimultaneousConvergence }
      */
-    public Body.SFC.SimultaneousConvergence createBodySFCSimultaneousConvergence() {
-        return new Body.SFC.SimultaneousConvergence();
+    public SFC.SimultaneousConvergence createBodySFCSimultaneousConvergence() {
+        return new SFC.SimultaneousConvergence();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.SimultaneousDivergence.ConnectionPointOut }
+     * Create an instance of {@link SFC.SimultaneousDivergence.ConnectionPointOut }
      */
-    public Body.SFC.SimultaneousDivergence.ConnectionPointOut createBodySFCSimultaneousDivergenceConnectionPointOut() {
-        return new Body.SFC.SimultaneousDivergence.ConnectionPointOut();
+    public SFC.SimultaneousDivergence.ConnectionPointOut createBodySFCSimultaneousDivergenceConnectionPointOut() {
+        return new SFC.SimultaneousDivergence.ConnectionPointOut();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.SelectionConvergence.ConnectionPointIn }
+     * Create an instance of {@link SFC.SelectionConvergence.ConnectionPointIn }
      */
-    public Body.SFC.SelectionConvergence.ConnectionPointIn createBodySFCSelectionConvergenceConnectionPointIn() {
-        return new Body.SFC.SelectionConvergence.ConnectionPointIn();
+    public SFC.SelectionConvergence.ConnectionPointIn createBodySFCSelectionConvergenceConnectionPointIn() {
+        return new SFC.SelectionConvergence.ConnectionPointIn();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.SelectionDivergence.ConnectionPointOut }
+     * Create an instance of {@link SFC.SelectionDivergence.ConnectionPointOut }
      */
-    public Body.SFC.SelectionDivergence.ConnectionPointOut createBodySFCSelectionDivergenceConnectionPointOut() {
-        return new Body.SFC.SelectionDivergence.ConnectionPointOut();
+    public SFC.SelectionDivergence.ConnectionPointOut createBodySFCSelectionDivergenceConnectionPointOut() {
+        return new SFC.SelectionDivergence.ConnectionPointOut();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Transition.Condition.Reference }
+     * Create an instance of {@link SFC.Transition.Condition.Reference }
      */
-    public Body.SFC.Transition.Condition.Reference createBodySFCTransitionConditionReference() {
-        return new Body.SFC.Transition.Condition.Reference();
+    public SFC.Transition.Condition.Reference createBodySFCTransitionConditionReference() {
+        return new SFC.Transition.Condition.Reference();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Transition.Condition.Inline }
+     * Create an instance of {@link SFC.Transition.Condition.Inline }
      */
-    public Body.SFC.Transition.Condition.Inline createBodySFCTransitionConditionInline() {
-        return new Body.SFC.Transition.Condition.Inline();
+    public SFC.Transition.Condition.Inline createBodySFCTransitionConditionInline() {
+        return new SFC.Transition.Condition.Inline();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Step.ConnectionPointOut }
+     * Create an instance of {@link SFC.Step.ConnectionPointOut }
      */
-    public Body.SFC.Step.ConnectionPointOut createBodySFCStepConnectionPointOut() {
-        return new Body.SFC.Step.ConnectionPointOut();
+    public SFC.Step.ConnectionPointOut createBodySFCStepConnectionPointOut() {
+        return new SFC.Step.ConnectionPointOut();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Step.ConnectionPointOutAction }
+     * Create an instance of {@link SFC.Step.ConnectionPointOutAction }
      */
-    public Body.SFC.Step.ConnectionPointOutAction createBodySFCStepConnectionPointOutAction() {
-        return new Body.SFC.Step.ConnectionPointOutAction();
+    public SFC.Step.ConnectionPointOutAction createBodySFCStepConnectionPointOutAction() {
+        return new SFC.Step.ConnectionPointOutAction();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.LeftPowerRail.ConnectionPointOut }
+     * Create an instance of {@link SFC.LeftPowerRail.ConnectionPointOut }
      */
-    public Body.SFC.LeftPowerRail.ConnectionPointOut createBodySFCLeftPowerRailConnectionPointOut() {
-        return new Body.SFC.LeftPowerRail.ConnectionPointOut();
+    public SFC.LeftPowerRail.ConnectionPointOut createBodySFCLeftPowerRailConnectionPointOut() {
+        return new SFC.LeftPowerRail.ConnectionPointOut();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Block.OutputVariables.Variable }
+     * Create an instance of {@link SFC.Block.OutputVariables.Variable }
      */
-    public Body.SFC.Block.OutputVariables.Variable createBodySFCBlockOutputVariablesVariable() {
-        return new Body.SFC.Block.OutputVariables.Variable();
+    public SFC.Block.OutputVariables.Variable createBodySFCBlockOutputVariablesVariable() {
+        return new SFC.Block.OutputVariables.Variable();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Block.InOutVariables.Variable }
+     * Create an instance of {@link SFC.Block.InOutVariables.Variable }
      */
-    public Body.SFC.Block.InOutVariables.Variable createBodySFCBlockInOutVariablesVariable() {
-        return new Body.SFC.Block.InOutVariables.Variable();
+    public SFC.Block.InOutVariables.Variable createBodySFCBlockInOutVariablesVariable() {
+        return new SFC.Block.InOutVariables.Variable();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.Block.InputVariables.Variable }
+     * Create an instance of {@link SFC.Block.InputVariables.Variable }
      */
-    public Body.SFC.Block.InputVariables.Variable createBodySFCBlockInputVariablesVariable() {
-        return new Body.SFC.Block.InputVariables.Variable();
+    public SFC.Block.InputVariables.Variable createBodySFCBlockInputVariablesVariable() {
+        return new SFC.Block.InputVariables.Variable();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.VendorElement.OutputVariables.Variable }
+     * Create an instance of {@link SFC.VendorElement.OutputVariables.Variable }
      */
-    public Body.SFC.VendorElement.OutputVariables.Variable createBodySFCVendorElementOutputVariablesVariable() {
-        return new Body.SFC.VendorElement.OutputVariables.Variable();
+    public SFC.VendorElement.OutputVariables.Variable createBodySFCVendorElementOutputVariablesVariable() {
+        return new SFC.VendorElement.OutputVariables.Variable();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.VendorElement.InOutVariables.Variable }
+     * Create an instance of {@link SFC.VendorElement.InOutVariables.Variable }
      */
-    public Body.SFC.VendorElement.InOutVariables.Variable createBodySFCVendorElementInOutVariablesVariable() {
-        return new Body.SFC.VendorElement.InOutVariables.Variable();
+    public SFC.VendorElement.InOutVariables.Variable createBodySFCVendorElementInOutVariablesVariable() {
+        return new SFC.VendorElement.InOutVariables.Variable();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.VendorElement.InputVariables.Variable }
+     * Create an instance of {@link SFC.VendorElement.InputVariables.Variable }
      */
-    public Body.SFC.VendorElement.InputVariables.Variable createBodySFCVendorElementInputVariablesVariable() {
-        return new Body.SFC.VendorElement.InputVariables.Variable();
+    public SFC.VendorElement.InputVariables.Variable createBodySFCVendorElementInputVariablesVariable() {
+        return new SFC.VendorElement.InputVariables.Variable();
     }
 
     /**
-     * Create an instance of {@link Body.SFC.ActionBlock.Action.Reference }
+     * Create an instance of {@link SFC.ActionBlock.Action.Reference }
      */
-    public Body.SFC.ActionBlock.Action.Reference createBodySFCActionBlockActionReference() {
-        return new Body.SFC.ActionBlock.Action.Reference();
+    public SFC.ActionBlock.Action.Reference createBodySFCActionBlockActionReference() {
+        return new SFC.ActionBlock.Action.Reference();
     }
 
     /**
-     * Create an instance of {@link org.plcopen.xml.tc60201.DataType.String }
+     * Create an instance of {@link PlcString }
      */
-    public org.plcopen.xml.tc60201.DataType.String createDataTypeString() {
-        return new org.plcopen.xml.tc60201.DataType.String();
+    public PlcString createDataTypeString() {
+        return new PlcString();
     }
 
     /**
-     * Create an instance of {@link org.plcopen.xml.tc60201.DataType.Wstring }
+     * Create an instance of {@link Wstring }
      */
-    public org.plcopen.xml.tc60201.DataType.Wstring createDataTypeWstring() {
-        return new org.plcopen.xml.tc60201.DataType.Wstring();
+    public Wstring createDataTypeWstring() {
+        return new Wstring();
     }
 
     /**
-     * Create an instance of {@link org.plcopen.xml.tc60201.DataType.Array }
+     * Create an instance of {@link PlcArray }
      */
-    public org.plcopen.xml.tc60201.DataType.Array createDataTypeArray() {
-        return new org.plcopen.xml.tc60201.DataType.Array();
+    public PlcArray createDataTypeArray() {
+        return new PlcArray();
     }
 
     /**
-     * Create an instance of {@link org.plcopen.xml.tc60201.DataType.Derived }
+     * Create an instance of {@link Derived }
      */
-    public org.plcopen.xml.tc60201.DataType.Derived createDataTypeDerived() {
-        return new org.plcopen.xml.tc60201.DataType.Derived();
+    public Derived createDataTypeDerived() {
+        return new Derived();
     }
 
     /**
-     * Create an instance of {@link org.plcopen.xml.tc60201.DataType.SubrangeSigned }
+     * Create an instance of {@link SubrangeSigned }
      */
-    public org.plcopen.xml.tc60201.DataType.SubrangeSigned createDataTypeSubrangeSigned() {
-        return new org.plcopen.xml.tc60201.DataType.SubrangeSigned();
+    public SubrangeSigned createDataTypeSubrangeSigned() {
+        return new SubrangeSigned();
     }
 
     /**
-     * Create an instance of {@link org.plcopen.xml.tc60201.DataType.SubrangeUnsigned }
+     * Create an instance of {@link SubrangeUnsigned }
      */
-    public org.plcopen.xml.tc60201.DataType.SubrangeUnsigned createDataTypeSubrangeUnsigned() {
-        return new org.plcopen.xml.tc60201.DataType.SubrangeUnsigned();
+    public SubrangeUnsigned createDataTypeSubrangeUnsigned() {
+        return new SubrangeUnsigned();
     }
 
     /**
-     * Create an instance of {@link org.plcopen.xml.tc60201.DataType.Pointer }
+     * Create an instance of {@link Pointer }
      */
-    public org.plcopen.xml.tc60201.DataType.Pointer createDataTypePointer() {
-        return new org.plcopen.xml.tc60201.DataType.Pointer();
+    public Pointer createDataTypePointer() {
+        return new Pointer();
     }
 
     /**
-     * Create an instance of {@link org.plcopen.xml.tc60201.DataType.Enum.Values.Value }
+     * Create an instance of {@link Values.Value }
      */
-    public org.plcopen.xml.tc60201.DataType.Enum.Values.Value createDataTypeEnumValuesValue() {
-        return new org.plcopen.xml.tc60201.DataType.Enum.Values.Value();
+    public Values.Value createDataTypeEnumValuesValue() {
+        return new Values.Value();
     }
 
     /**
-     * Create an instance of {@link AddData.Data }
+     * Create an instance of {@link Data }
      */
-    public AddData.Data createAddDataData() {
-        return new AddData.Data();
+    public Data createAddDataData() {
+        return new Data();
     }
 
     /**
-     * Create an instance of {@link Project.Instances.Configurations.Configuration.Resource.Task }
+     * Create an instance of {@link Instances.Configurations.Configuration.Resource.Task }
      */
-    public Project.Instances.Configurations.Configuration.Resource.Task createProjectInstancesConfigurationsConfigurationResourceTask() {
-        return new Project.Instances.Configurations.Configuration.Resource.Task();
+    public Instances.Configurations.Configuration.Resource.Task createProjectInstancesConfigurationsConfigurationResourceTask() {
+        return new Instances.Configurations.Configuration.Resource.Task();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Transitions.Transition }
+     * Create an instance of {@link Pou.Transitions.Transition }
      */
-    public Project.Types.Pous.Pou.Transitions.Transition createProjectTypesPousPouTransitionsTransition() {
-        return new Project.Types.Pous.Pou.Transitions.Transition();
+    public Pou.Transitions.Transition createProjectTypesPousPouTransitionsTransition() {
+        return new Pou.Transitions.Transition();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Actions.Action }
+     * Create an instance of {@link Pou.Actions.Action }
      */
-    public Project.Types.Pous.Pou.Actions.Action createProjectTypesPousPouActionsAction() {
-        return new Project.Types.Pous.Pou.Actions.Action();
+    public Pou.Actions.Action createProjectTypesPousPouActionsAction() {
+        return new Pou.Actions.Action();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Interface.LocalVars }
+     * Create an instance of {@link Pou.Interface.LocalVars }
      */
-    public Project.Types.Pous.Pou.Interface.LocalVars createProjectTypesPousPouInterfaceLocalVars() {
-        return new Project.Types.Pous.Pou.Interface.LocalVars();
+    public Pou.Interface.LocalVars createProjectTypesPousPouInterfaceLocalVars() {
+        return new Pou.Interface.LocalVars();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Interface.TempVars }
+     * Create an instance of {@link Pou.Interface.TempVars }
      */
-    public Project.Types.Pous.Pou.Interface.TempVars createProjectTypesPousPouInterfaceTempVars() {
-        return new Project.Types.Pous.Pou.Interface.TempVars();
+    public Pou.Interface.TempVars createProjectTypesPousPouInterfaceTempVars() {
+        return new Pou.Interface.TempVars();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Interface.InputVars }
+     * Create an instance of {@link Pou.Interface.InputVars }
      */
-    public Project.Types.Pous.Pou.Interface.InputVars createProjectTypesPousPouInterfaceInputVars() {
-        return new Project.Types.Pous.Pou.Interface.InputVars();
+    public Pou.Interface.InputVars createProjectTypesPousPouInterfaceInputVars() {
+        return new Pou.Interface.InputVars();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Interface.OutputVars }
+     * Create an instance of {@link Pou.Interface.OutputVars }
      */
-    public Project.Types.Pous.Pou.Interface.OutputVars createProjectTypesPousPouInterfaceOutputVars() {
-        return new Project.Types.Pous.Pou.Interface.OutputVars();
+    public Pou.Interface.OutputVars createProjectTypesPousPouInterfaceOutputVars() {
+        return new Pou.Interface.OutputVars();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Interface.InOutVars }
+     * Create an instance of {@link Pou.Interface.InOutVars }
      */
-    public Project.Types.Pous.Pou.Interface.InOutVars createProjectTypesPousPouInterfaceInOutVars() {
-        return new Project.Types.Pous.Pou.Interface.InOutVars();
+    public Pou.Interface.InOutVars createProjectTypesPousPouInterfaceInOutVars() {
+        return new Pou.Interface.InOutVars();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Interface.ExternalVars }
+     * Create an instance of {@link Pou.Interface.ExternalVars }
      */
-    public Project.Types.Pous.Pou.Interface.ExternalVars createProjectTypesPousPouInterfaceExternalVars() {
-        return new Project.Types.Pous.Pou.Interface.ExternalVars();
+    public Pou.Interface.ExternalVars createProjectTypesPousPouInterfaceExternalVars() {
+        return new Pou.Interface.ExternalVars();
     }
 
     /**
-     * Create an instance of {@link Project.Types.Pous.Pou.Interface.GlobalVars }
+     * Create an instance of {@link Pou.Interface.GlobalVars }
      */
-    public Project.Types.Pous.Pou.Interface.GlobalVars createProjectTypesPousPouInterfaceGlobalVars() {
-        return new Project.Types.Pous.Pou.Interface.GlobalVars();
+    public Pou.Interface.GlobalVars createProjectTypesPousPouInterfaceGlobalVars() {
+        return new Pou.Interface.GlobalVars();
     }
 
     /**
-     * Create an instance of {@link Project.Types.DataTypes.DataType }
+     * Create an instance of {@link DataTypes.DataType }
      */
-    public Project.Types.DataTypes.DataType createProjectTypesDataTypesDataType() {
-        return new Project.Types.DataTypes.DataType();
+    public DataTypes.DataType createProjectTypesDataTypesDataType() {
+        return new DataTypes.DataType();
     }
 
     /**
-     * Create an instance of {@link Project.ContentHeader.CoordinateInfo.PageSize }
+     * Create an instance of {@link ContentHeader.CoordinateInfo.PageSize }
      */
-    public Project.ContentHeader.CoordinateInfo.PageSize createProjectContentHeaderCoordinateInfoPageSize() {
-        return new Project.ContentHeader.CoordinateInfo.PageSize();
+    public ContentHeader.CoordinateInfo.PageSize createProjectContentHeaderCoordinateInfoPageSize() {
+        return new ContentHeader.CoordinateInfo.PageSize();
     }
 
     /**
-     * Create an instance of {@link Project.ContentHeader.CoordinateInfo.Sfc.Scaling }
+     * Create an instance of {@link ContentHeader.CoordinateInfo.Sfc.Scaling }
      */
-    public Project.ContentHeader.CoordinateInfo.Sfc.Scaling createProjectContentHeaderCoordinateInfoSfcScaling() {
-        return new Project.ContentHeader.CoordinateInfo.Sfc.Scaling();
+    public ContentHeader.CoordinateInfo.Sfc.Scaling createProjectContentHeaderCoordinateInfoSfcScaling() {
+        return new ContentHeader.CoordinateInfo.Sfc.Scaling();
     }
 
     /**
-     * Create an instance of {@link Project.ContentHeader.CoordinateInfo.Ld.Scaling }
+     * Create an instance of {@link ContentHeader.CoordinateInfo.Ld.Scaling }
      */
-    public Project.ContentHeader.CoordinateInfo.Ld.Scaling createProjectContentHeaderCoordinateInfoLdScaling() {
-        return new Project.ContentHeader.CoordinateInfo.Ld.Scaling();
+    public ContentHeader.CoordinateInfo.Ld.Scaling createProjectContentHeaderCoordinateInfoLdScaling() {
+        return new ContentHeader.CoordinateInfo.Ld.Scaling();
     }
 
     /**
-     * Create an instance of {@link Project.ContentHeader.CoordinateInfo.Fbd.Scaling }
+     * Create an instance of {@link ContentHeader.CoordinateInfo.Fbd.Scaling }
      */
-    public Project.ContentHeader.CoordinateInfo.Fbd.Scaling createProjectContentHeaderCoordinateInfoFbdScaling() {
-        return new Project.ContentHeader.CoordinateInfo.Fbd.Scaling();
+    public ContentHeader.CoordinateInfo.Fbd.Scaling createProjectContentHeaderCoordinateInfoFbdScaling() {
+        return new ContentHeader.CoordinateInfo.Fbd.Scaling();
     }
 
 }

@@ -38,13 +38,13 @@ import javax.xml.bind.annotation.*;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "varList")
 @XmlSeeAlso({
-        org.plcopen.xml.tc60201.Project.Types.Pous.Pou.Interface.LocalVars.class,
-        org.plcopen.xml.tc60201.Project.Types.Pous.Pou.Interface.TempVars.class,
-        org.plcopen.xml.tc60201.Project.Types.Pous.Pou.Interface.InputVars.class,
-        org.plcopen.xml.tc60201.Project.Types.Pous.Pou.Interface.OutputVars.class,
-        org.plcopen.xml.tc60201.Project.Types.Pous.Pou.Interface.InOutVars.class,
-        org.plcopen.xml.tc60201.Project.Types.Pous.Pou.Interface.ExternalVars.class,
-        org.plcopen.xml.tc60201.Project.Types.Pous.Pou.Interface.GlobalVars.class
+        Pou.Interface.LocalVars.class,
+        Pou.Interface.TempVars.class,
+        Pou.Interface.InputVars.class,
+        Pou.Interface.OutputVars.class,
+        Pou.Interface.InOutVars.class,
+        Pou.Interface.ExternalVars.class,
+        Pou.Interface.GlobalVars.class
 })
 public class VarList
         extends VarListPlain {

@@ -43,11 +43,11 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "addData"
 })
 @XmlSeeAlso({
-        org.plcopen.xml.tc60201.Body.SFC.LeftPowerRail.ConnectionPointOut.class,
-        org.plcopen.xml.tc60201.Body.SFC.Step.ConnectionPointOut.class,
-        org.plcopen.xml.tc60201.Body.SFC.Step.ConnectionPointOutAction.class,
-        org.plcopen.xml.tc60201.Body.SFC.SelectionDivergence.ConnectionPointOut.class,
-        org.plcopen.xml.tc60201.Body.SFC.SimultaneousDivergence.ConnectionPointOut.class
+        SFC.LeftPowerRail.ConnectionPointOut.class,
+        SFC.Step.ConnectionPointOut.class,
+        SFC.Step.ConnectionPointOutAction.class,
+        SFC.SelectionDivergence.ConnectionPointOut.class,
+        SFC.SimultaneousDivergence.ConnectionPointOut.class
 })
 public class ConnectionPointOut implements AddDataContainer, org.plcopen.xml.tc60201.PlcNode{
 

@@ -1,8 +1,7 @@
 package org.plcopen.xml.util;
 
 import org.eclipse.persistence.sessions.SessionEventListener;
-import org.plcopen.xml.tc60201.Project;
-import org.plcopen.xml.tc60201.ProjectStructure;
+import org.plcopen.xml.tc60201.*;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -22,11 +21,11 @@ public class XmlUnMarshaller {
 
 		JAXBContext jaxbContext = JAXBContext
 				.newInstance(new Class[] { Project.class,
-                        Project.Instances.Configurations.Configuration.Resource.class,
+                        Instances.Configurations.Configuration.Resource.class,
                         ProjectStructure.class,
                         ProjectStructure.StructureObject.class,
-                        ProjectStructure.Folder.class,
-						Project.Types.Pous.Pou.class}, properties);
+                        Folder.class,
+						Pou.class}, properties);
 
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 		Project project = (Project) jaxbUnmarshaller.unmarshal(xml);

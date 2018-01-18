@@ -156,7 +156,7 @@ public class RootValue implements org.plcopen.xml.tc60201.PlcNode{
 
 
     /**
-     * Array value consisting of a list of occurrances
+     * PlcArray value consisting of a list of occurrances
      * - value pairs
      * <p>
      * <p>Java-Klasse für anonymous complex type.
