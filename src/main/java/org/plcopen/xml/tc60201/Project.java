@@ -420,7 +420,7 @@ import java.util.List;
         "documentation"
 })
 @XmlRootElement(name = "project")
-public class Project {
+public class Project implements AddDataContainer {
 
     @XmlElement(required = true)
     protected Project.FileHeader fileHeader;
@@ -677,7 +677,7 @@ public class Project {
             "addDataInfo",
             "addData"
     })
-    public static class ContentHeader {
+    public static class ContentHeader implements AddDataContainer {
 
         @XmlElement(name = "Comment")
         protected String comment;
@@ -2019,7 +2019,7 @@ public class Project {
                     "addData",
                     "documentation"
             })
-            public static class Configuration {
+            public static class Configuration implements AddDataContainer {
 
                 protected List<Project.Instances.Configurations.Configuration.Resource> resource;
                 protected List<VarList> globalVars;
@@ -2269,7 +2269,7 @@ public class Project {
                         "documentation"
                 })
                 @XmlRootElement(name = "resource")
-                public static class Resource {
+                public static class Resource implements AddDataContainer {
 
                     protected List<Project.Instances.Configurations.Configuration.Resource.Task> task;
                     protected List<VarList> globalVars;
@@ -2486,7 +2486,7 @@ public class Project {
                             "addData",
                             "documentation"
                     })
-                    public static class Task {
+                    public static class Task implements AddDataContainer {
 
                         protected List<PouInstance> pouInstance;
                         protected AddData addData;
@@ -3020,7 +3020,7 @@ public class Project {
                     "addData",
                     "documentation"
             })
-            public static class DataType {
+            public static class DataType implements AddDataContainer{
 
                 @XmlElement(required = true)
                 protected org.plcopen.xml.tc60201.DataType baseType;
@@ -3478,7 +3478,7 @@ public class Project {
                     "addData",
                     "documentation"
             })
-            public static class Pou {
+            public static class Pou implements AddDataContainer {
 
                 @XmlElement(name = "interface")
                 protected Project.Types.Pous.Pou.Interface _interface;
@@ -3779,7 +3779,7 @@ public class Project {
                             "addData",
                             "documentation"
                     })
-                    public static class Action {
+                    public static class Action implements AddDataContainer{
 
                         @XmlElement(required = true)
                         protected Body body;
@@ -3983,7 +3983,7 @@ public class Project {
                         "addData",
                         "documentation"
                 })
-                public static class Interface {
+                public static class Interface implements AddDataContainer{
 
                     protected org.plcopen.xml.tc60201.DataType returnType;
                     @XmlElements({
@@ -4352,7 +4352,7 @@ public class Project {
                             "addData",
                             "documentation"
                     })
-                    public static class Transition {
+                    public static class Transition implements AddDataContainer{
 
                         @XmlElement(required = true)
                         protected Body body;

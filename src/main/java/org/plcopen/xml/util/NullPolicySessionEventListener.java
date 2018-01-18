@@ -1,4 +1,4 @@
-package de.tum.ais.xml.plcopen;
+package org.plcopen.xml.util;
 
 import org.eclipse.persistence.descriptors.ClassDescriptor;
 import org.eclipse.persistence.mappings.DatabaseMapping;

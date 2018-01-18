@@ -48,7 +48,7 @@ import java.util.List;
         "position",
         "addData"
 })
-public class Connection {
+public class Connection implements AddDataContainer{
 
     protected List<Position> position;
     protected AddData addData;

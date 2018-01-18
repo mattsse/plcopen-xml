@@ -42,7 +42,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
         "addData",
         "documentation"
 })
-public class PouInstance {
+public class PouInstance implements AddDataContainer{
 
     protected AddData addData;
     protected FormattedText documentation;

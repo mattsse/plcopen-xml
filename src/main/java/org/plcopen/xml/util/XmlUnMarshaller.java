@@ -1,4 +1,4 @@
-package de.tum.ais.xml.plcopen;
+package org.plcopen.xml.util;
 
 import org.eclipse.persistence.sessions.SessionEventListener;
 import org.plcopen.xml.tc60201.Project;

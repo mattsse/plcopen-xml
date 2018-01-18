@@ -1,25 +1,11 @@
-package de.tum.ais.xml.plcopen;
+package org.plcopen.xml.util;
 
 public final class XMLLiterals {
-
-	public final static String XMLNS = "http://www.w3.org/1999/xhtml";
-
-	public final class FileHeader {
-		public final static String COMPANY_NAME = "AIS-TUM";
-		public final static String COMPANY_URL = "https://www.ais.mw.tum.de/startseite/";
-		public final static String PRODUCT_VERSION = "v.0.1";
-		public final static String PRODUCT_RELEASE = "Beta";
-	}
-
-	public final class ContentHeader {
-		public final static String NAME = "autoMFM.project";
-		public final static String VERSION = XMLLiterals.FileHeader.PRODUCT_VERSION;
-		public final static String ORGANIZATION = XMLLiterals.FileHeader.COMPANY_NAME;
-	}
 
 	public final class PouTypes {
 		public final static String FUNCTIONBLOCK = "functionBlock";
 		public final static String PROGRAM = "program";
+		public final static String FUNCTION = "function";
 	}
 
 	public final class DataNames {
@@ -44,12 +30,9 @@ public final class XMLLiterals {
 		public final static String INPUT = "INPUT";
 		public final static String OUTPUT = "OUTPUT";
 		public final static String IN_OUT = "IN_OUT";
-		public final static String FB = "FUNCTION_BLOCK";
+		public final static String FB_START = "FUNCTION_BLOCK";
+		public final static String FB_END = "END_FUNCTION_BLOCK";
 		public final static String MAIN = "MAIN";
-		public final static String INTERVAL = "PT0S";
-		public final static String PRIORITY = "20";
-		public final static String KindOfTask = "Cyclic";
-		public final static String DEFAULT_INTERVAL = "1000";
 		public final static String INTERVAL_UNIT = "us";
 		public final static String TIME_UNIT = "ms";
 		public final static String APPLICATION = "Application";
@@ -57,12 +40,6 @@ public final class XMLLiterals {
 	}
 
 	public final class Text {
-		public final static String REFERENCE_TO = "REFERENCE TO REFERENCE TO ";
-	}
-
-	public final class IDs {
-		public final static String TASK_ID = "plctask_ID";
-		public final static String APPLICATION_ID = "application-id";
-
+		public final static String REFERENCE_TO = "REFERENCE TO";
 	}
 }

@@ -62,7 +62,7 @@ import java.util.List;
 @XmlSeeAlso({
         VarList.class
 })
-public class VarListPlain {
+public class VarListPlain implements AddDataContainer {
 
     protected List<VarListPlain.Variable> variable;
     protected AddData addData;
@@ -101,7 +101,7 @@ public class VarListPlain {
      * @return possible object is
      * {@link AddData }
      */
-    public AddData getAddData() {
+    public AddData  getAddData() {
         return addData;
     }
 
@@ -168,7 +168,7 @@ public class VarListPlain {
             "addData",
             "documentation"
     })
-    public static class Variable {
+    public static class Variable implements AddDataContainer {
 
         @XmlElement(required = true)
         protected DataType type;
@@ -219,7 +219,7 @@ public class VarListPlain {
          * Legt den Wert der initialValue-Eigenschaft fest.
          *
          * @param value allowed object is
-         *              {@link Value }
+         *              {@link RootValue }
          */
         public void setInitialValue(RootValue value) {
             this.initialValue = value;

@@ -56,7 +56,7 @@ import java.util.List;
         "addData",
         "documentation"
 })
-public class VarListAccess {
+public class VarListAccess implements AddDataContainer{
 
     protected List<VarListAccess.AccessVariable> accessVariable;
     protected AddData addData;
@@ -161,7 +161,7 @@ public class VarListAccess {
             "addData",
             "documentation"
     })
-    public static class AccessVariable {
+    public static class AccessVariable implements AddDataContainer{
 
         @XmlElement(required = true)
         protected DataType type;

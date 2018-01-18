@@ -2,7 +2,7 @@
 @XmlJavaTypeAdapters({
 		@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(value = MyStringAdapter.class, type = String.class) })
 
-package de.tum.ais.xml.plcopen;
+package org.plcopen.xml.util;
 
 import javax.xml.bind.annotation.XmlNsForm;
 import javax.xml.bind.annotation.XmlSchema;

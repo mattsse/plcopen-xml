@@ -96,7 +96,7 @@ import java.util.List;
 @XmlSeeAlso({
         Body.SFC.Transition.Condition.Inline.class
 })
-public class Body {
+public class Body implements AddDataContainer{
 
     @XmlElement(name = "IL")
     protected FormattedText il;
@@ -676,7 +676,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class ActionBlock {
+        public static class ActionBlock implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -1001,7 +1001,7 @@ public class Body {
                     "addData",
                     "documentation"
             })
-            public static class Action {
+            public static class Action implements AddDataContainer{
 
                 @XmlElement(required = true)
                 protected Position relPosition;
@@ -1487,7 +1487,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Block {
+        public static class Block implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -2678,7 +2678,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Coil {
+        public static class Coil implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -3036,7 +3036,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Comment {
+        public static class Comment implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -3256,7 +3256,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Connector {
+        public static class Connector implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -3504,7 +3504,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Contact {
+        public static class Contact implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -3867,7 +3867,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Continuation {
+        public static class Continuation implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -4107,7 +4107,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Error {
+        public static class Error implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -4337,7 +4337,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class InOutVariable {
+        public static class InOutVariable implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -4783,7 +4783,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class InVariable {
+        public static class InVariable implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -5125,7 +5125,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Jump {
+        public static class Jump implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -5386,7 +5386,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class JumpStep {
+        public static class JumpStep implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -5648,7 +5648,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Label {
+        public static class Label implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -5898,7 +5898,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class LeftPowerRail {
+        public static class LeftPowerRail implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -6194,7 +6194,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class MacroStep {
+        public static class MacroStep implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -6504,7 +6504,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class OutVariable {
+        public static class OutVariable implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -6845,7 +6845,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Return {
+        public static class Return implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -7086,7 +7086,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class RightPowerRail {
+        public static class RightPowerRail implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -7339,7 +7339,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class SelectionConvergence {
+        public static class SelectionConvergence implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -7614,7 +7614,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class SelectionDivergence {
+        public static class SelectionDivergence implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -7904,7 +7904,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class SimultaneousConvergence {
+        public static class SimultaneousConvergence implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -8157,7 +8157,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class SimultaneousDivergence {
+        public static class SimultaneousDivergence implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -8493,7 +8493,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Step {
+        public static class Step implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -8973,7 +8973,7 @@ public class Body {
                 "addData",
                 "documentation"
         })
-        public static class Transition {
+        public static class Transition implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;
@@ -9590,7 +9590,7 @@ public class Body {
                 "outputVariables",
                 "addData"
         })
-        public static class VendorElement {
+        public static class VendorElement implements AddDataContainer{
 
             @XmlElement(required = true)
             protected Position position;

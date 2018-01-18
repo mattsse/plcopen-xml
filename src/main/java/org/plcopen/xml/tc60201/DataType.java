@@ -1011,7 +1011,7 @@ public class DataType {
     @XmlType(name = "", propOrder = {
             "addData"
     })
-    public static class Derived {
+    public static class Derived implements AddDataContainer {
 
         protected AddData addData;
         @XmlAttribute(name = "name", required = true)

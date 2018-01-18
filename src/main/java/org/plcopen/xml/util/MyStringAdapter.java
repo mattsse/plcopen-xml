@@ -1,4 +1,4 @@
-package de.tum.ais.xml.plcopen;
+package org.plcopen.xml.util;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 

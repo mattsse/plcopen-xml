@@ -1,4 +1,4 @@
-package de.tum.ais.xml.plcopen;
+package org.plcopen.xml.util;
 
 import java.io.File;
 
@@ -6,7 +6,7 @@ import javax.xml.bind.JAXBException;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.plcopen.xml.tc60201.AddData;
+import org.plcopen.xml.tc60201.Body;
 import org.plcopen.xml.tc60201.Project;
 
 public class UnMarshalTest {
@@ -20,9 +20,8 @@ public class UnMarshalTest {
 		
 		try {
 			Project project = XmlUnMarshaller.unmarshal(xml);
-			for(AddData.Data data : project.getAddData().getData()){
-				System.out.println(data.getAny());
-			}
+			System.out.println(project.getAddData()
+									  .getAllChildren(Body.class));
 		} catch (JAXBException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

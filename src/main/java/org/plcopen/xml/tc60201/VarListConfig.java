@@ -55,7 +55,7 @@ import java.util.List;
         "addData",
         "documentation"
 })
-public class VarListConfig {
+public class VarListConfig implements AddDataContainer{
 
     protected List<VarListConfig.ConfigVariable> configVariable;
     protected AddData addData;
@@ -161,7 +161,7 @@ public class VarListConfig {
             "addData",
             "documentation"
     })
-    public static class ConfigVariable {
+    public static class ConfigVariable implements AddDataContainer{
 
         @XmlElement(required = true)
         protected DataType type;

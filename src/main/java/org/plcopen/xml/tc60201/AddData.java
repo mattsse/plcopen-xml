@@ -15,6 +15,7 @@ import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 /**
@@ -91,6 +92,43 @@ public class AddData {
         }
         return this.data;
     }
+
+    /**
+     * @param clazz
+     * @param <T>
+     * @return
+     */
+    public <T> List<T> getChildren(Class<T> clazz) {
+        return getData().stream()
+                        .filter(p -> clazz.isInstance(p))
+                        .map(m -> clazz.cast(m))
+                        .collect(Collectors.toList());
+    }
+
+
+    /**
+     * @param clazz
+     * @param <T>
+     * @return
+     */
+    public <T> List<T> getAllChildren(Class<T> clazz) {
+        List<T> result = new ArrayList<>();
+
+        for (Data data : getData()) {
+            if (clazz.isInstance(data)) {
+                result.add(clazz.cast(data));
+                continue;
+            }
+            if (data instanceof AddDataContainer) {
+                AddData childAddData = ((AddDataContainer) data).getAddData();
+                if (childAddData != null) {
+                    result.addAll(childAddData.getAllChildren(clazz));
+                }
+            }
+        }
+        return result;
+    }
+
 
     @Override
     public String toString() {
