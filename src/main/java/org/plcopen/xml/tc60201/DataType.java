@@ -8,7 +8,10 @@
 
 package org.plcopen.xml.tc60201;
 
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
 import java.util.Collections;
 import java.util.List;
 
@@ -158,7 +161,12 @@ public class DataType implements org.plcopen.xml.tc60201.PlcNode {
 
 
     @Override
-    public <T> List<T> getChildNodes(Class<T> clazz) {
+    public <T> List<T> getChildren(Class<T> clazz) {
+        return Collections.emptyList();
+    }
+
+    @Override
+    public <T> List<T> getAllChildren(Class<T> clazz) {
         return Collections.emptyList();
     }
 

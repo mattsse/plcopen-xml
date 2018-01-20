@@ -8,7 +8,9 @@
 
 package org.plcopen.xml.tc60201;
 
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -94,10 +96,10 @@ public class AddData implements org.plcopen.xml.tc60201.PlcNode {
      * @param <T>
      * @return
      */
-    public <T> List<T> getChildren(Class<T> clazz) {
+    public <T> List<T> getContents(Class<T> clazz) {
         return getData().stream()
-                        .filter(p -> clazz.isInstance(p))
-                        .map(m -> clazz.cast(m))
+                        .filter(p -> p.getAny() != null && clazz.isInstance(p.getAny()))
+                        .map(m -> clazz.cast(m.getAny()))
                         .collect(Collectors.toList());
     }
 
@@ -107,16 +109,17 @@ public class AddData implements org.plcopen.xml.tc60201.PlcNode {
      * @param <T>
      * @return
      */
-    public <T> List<T> getAllChildren(Class<T> clazz) {
+    public <T> List<T> getAllContents(Class<T> clazz) {
         List<T> result = new ArrayList<>();
 
         for (Data data : getData()) {
-            if (clazz.isInstance(data)) {
-                result.add(clazz.cast(data));
+            Object any = data.getAny();
+            if (clazz.isInstance(any)) {
+                result.add(clazz.cast(any));
                 continue;
             }
-            if (data instanceof AddDataContainer) {
-                AddData childAddData = ((AddDataContainer) data).getAddData();
+            if (any instanceof AddDataContainer) {
+                AddData childAddData = ((AddDataContainer) any).getAddData();
                 if (childAddData != null) {
                     result.addAll(childAddData.getAllChildren(clazz));
                 }
